@@ -1,10 +1,9 @@
 <?php
     //nawiazanie polaczenia z baza danych
     $conn = mysqli_connect('localhost','root','','baza');
-    if($conn == false)
+    if(!$conn)
     {
-        echo "nie udało się nawiązać połączenia! <br>";
-        echo mysqli_error($conn);
+        exit();
     }
     else
     {
@@ -12,8 +11,8 @@
         $data_rezerwacji = $_POST['data'];
         $ile_osob = $_POST['ile_osob'];
         $nr_tel = $_POST['nr_tel'];
-        $zgadzam_sie = $_POST['zgadzam_sie'];
 
+        //wyslanie zapytania do bazy
         $polecenie = "INSERT INTO `rezerwacje`(`data_rez`, `liczba_osob`, `telefon`) VALUES ('$data_rezerwacji','$ile_osob','$nr_tel');";
         mysqli_query($conn,$polecenie);
 
