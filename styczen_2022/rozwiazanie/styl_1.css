@@ -1,0 +1,53 @@
+body
+{
+    background-color: #F6E5DC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#baner
+{
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}
+
+#panel_lewy
+{
+    width: 60%;
+    float: left;
+}
+
+#panel_prawy
+{
+    font-size: 150%;
+    padding: 70px;
+    float: left;
+}
+
+#panel_dolny
+{
+    clear: both;
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+}
+
+#stopka
+{
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+}
+img
+{
+    height: 350px;
+}
+
+.przyciski
+{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
