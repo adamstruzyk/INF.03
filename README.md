@@ -9,5 +9,5 @@ a także **materiały**, jeśli najpierw chciałbyś/chciałabyś rozwiązać ar
 - 🛠️ **Pliki egzaminacyjne** – pliki potrzebne do wykonania zadań
 - ✔️ **Gotowe rozwiązania** – kody napisane zgodnie z zasadami oceniania na egzaminie
 
-*rozwiązania będą systematycznie dodawane    
+*rozwiązania są na bieżąco dodawane    
   **POWODZENIA! :)**
