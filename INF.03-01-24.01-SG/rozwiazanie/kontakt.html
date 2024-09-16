@@ -6,9 +6,36 @@
     <link rel="stylesheet" href="styl.css" />
     <title>Firma IT</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+
+    <script>
+        function klik()
+        {
+            //pobranie danych z formularza
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+            let email = document.getElementById("email").value;
+            let zgloszenie = document.getElementById("zgloszenie").value;
+            let zgadzam_sie = document.getElementById("zgadzam_sie").checked;
+    
+            if(zgadzam_sie)
+            {
+                document.getElementById("wynik").innerHTML = 
+                imie+" "+nazwisko+" <br>Treść Twojej sprawy: "+zgloszenie;
+                document.getElementById("wynik").style.color = "navy";
+            }
+            else
+            {
+                document.getElementById("wynik").innerHTML = "Musisz zapoznać się z regulaminem";
+                document.getElementById("wynik").style.color = "red";
+            }
+    
+        }
+    </script>
+
+
   </head>
   <body>
-    <div id="container">
+    <div id="kontener">
       <div id="logo">
         <img src="/img/logo.png" alt="firma it" />
       </div>
@@ -22,7 +49,7 @@
       </div>
       <div id="glowny">
         <h2>Kontakt</h2>
-        <form action="" method="post">
+        <form method="">
             <table>
                 <tr>
                     <td>Imię: </td><td><input type="text" id="imie"></td>
@@ -31,22 +58,32 @@
                     <td>Nazwisko: </td><td><input type="text" id="nazwisko"></td>
                 </tr>
                 <tr>
-                    <td>E-mail: </td><td><input type="email"></td>
+                    <td>E-mail: </td><td><input type="email" id="email"></td>
                 </tr>
                 <tr></tr>
                     <td>Zgłoszenie: </td><td><textarea id="zgloszenie" cols="40" rows="10"></textarea></td>
                 </tr>
                 <tr>
-                    <td></td><td><input type="checkbox">Zapoznałam/em się z regulaminem</td>
+                    <td></td><td><input type="checkbox" id="zgadzam_sie">Zapoznałam/em się z regulaminem</td>
                 </tr>
                 <tr>
-                    <td></td><td><input type="reset"><input type="submit"></td>
+                    <!--musi byc typ button zamiast submit, bo submit refreshuje cala strone, resetujac dzialanie skryptu-->
+                    <td></td><td><input type="reset"><input type="button" onclick="klik()" value="Prześlij"></td>
                 </tr>
             </table>
         </form>
+
         <hr />
+
+        <p id="wynik">
+            <!--tutaj dziala skrypt-->
+        </p>
+
       </div>
       <div id="stopka">Autor strony: <strong>Adam Strużyk 5TI</strong></div>
     </div>
+
+
   </body>
+
 </html>

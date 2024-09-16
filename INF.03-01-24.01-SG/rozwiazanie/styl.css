@@ -41,7 +41,7 @@ body
     padding: 10px;
 }
 
-input[type="submit"],input[type="reset"]
+input[type="button"],input[type="reset"]
 {
     background-color: lightblue;
     color: navy;
