@@ -1,0 +1,62 @@
+body
+{
+    background-color: #EEEEEE,;
+    font-family: Helvetica, sans-serif;
+}
+
+#kontener
+{
+    width: 90%;
+    margin: auto;
+}   
+
+#logo,#menu
+{
+    float: left;
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#baner
+{
+    clear: both;
+    background-color: #DDDDDD;
+    height: 200px;
+}
+
+#glowny
+{
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+
+#stopka
+{
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+input[type="submit"],input[type="reset"]
+{
+    background-color: lightblue;
+    color: navy;
+}
+
+#menu a
+{
+    color: navy;
+    font-size: 150%;
+    font-style: bold, none;
+    margin: 10px;
+    padding: 5px;
+}
+
+#menu a:hover
+{
+    border: solid 1px navy;
+}
