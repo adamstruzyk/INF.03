@@ -1,0 +1,4 @@
+ZAPYTANIE 1: INSERT INTO `zawody_wedkarskie`(`Karty_wedkarskie_id`, `Lowisko_id`, `data_zawodow`, `sedzia`) VALUES (2,4,"2021-09-28","Andrzej Nowak");
+ZAPYTANIE 2: SELECT `id`,`data_zawodow` FROM `zawody_wedkarskie` WHERE `sedzia` LIKE "Krzysztof Dobrowolski";
+ZAPYTANIE 3: SELECT karty_wedkarskie.imie, karty_wedkarskie.nazwisko, karty_wedkarskie.punkty FROM `karty_wedkarskie` JOIN zawody_wedkarskie ON karty_wedkarskie.id = zawody_wedkarskie.Karty_wedkarskie_id WHERE zawody_wedkarskie.id = 4;
+ZAPYTANIE 4: UPDATE `karty_wedkarskie` SET `punkty`= `punkty` + 2 WHERE `id`= 1;
