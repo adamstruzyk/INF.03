@@ -10,4 +10,4 @@ a także **materiały**, jeśli najpierw chciałbyś/chciałabyś rozwiązać ar
 - ✔️ **Gotowe rozwiązania** – kody napisane zgodnie z zasadami oceniania na egzaminie
 
 *rozwiązania są na bieżąco dodawane    
-  **POWODZENIA! :)**
+  **POWODZENIA! :)**     
