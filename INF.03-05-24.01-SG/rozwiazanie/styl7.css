@@ -1,0 +1,80 @@
+*
+{
+    font-family: Cambria;
+} 
+
+#lewy1
+{
+    height: 400px;
+}
+
+#lewy2
+{
+    height: 330px;
+}
+
+#prawy1,#prawy2
+{
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+}
+
+#prawy1
+{
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+    float: right;
+}
+
+#prawy2
+{
+    color: indigo;
+    height: 580px;
+    float: right;
+}
+#lewy_duzy
+{
+    width: 25%;
+    float: left;
+    background-color: #E1BEE7;
+}
+
+#stopka
+{
+    clear: both;
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+ul li
+{
+    list-style-type: circle;
+}
+
+img
+{
+    padding: 4px;
+    margin: 15px;
+}
+
+img:hover
+{
+    padding: 3px;
+    border: 1px dashed indigo;
+}
+
+#lewy1 a:first-child
+{
+    margin: 25px;
+}
+
+
