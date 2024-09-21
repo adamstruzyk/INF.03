@@ -1,4 +1,4 @@
-Zapytanie 1:
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 1: SELECT `nazwa`,`cena` FROM `uslugi` WHERE `cena` >= 50;
+Zapytanie 2: SELECT AVG(`cena`),COUNT(`id`) FROM `uslugi` WHERE `rodzaj` LIKE 1;
+Zapytanie 3: CREATE USER `kosmetyczka`@`localhost` IDENTIFIED BY 'Kosmet34';
+Zapytanie 4: GRANT SELECT, UPDATE ON `salon`.`uslugi` TO 'kosmetyczka'@'localhost';
