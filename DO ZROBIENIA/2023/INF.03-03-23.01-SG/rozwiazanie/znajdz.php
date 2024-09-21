@@ -41,4 +41,29 @@
     </div>
 </body>
 
+<?php
+
+    $conn = mysqli_connect('localhost','root','','kwiaciarnia');
+    if(!$conn)
+    {
+        exit();
+    }
+    else
+    {
+        $nazwa_miasta = $_POST['miasto'];
+        $zapytanie = "SELECT `nazwa`,`ulica` FROM `kwiaciarnie` WHERE `miasto` LIKE '$nazwa_miasta';";
+
+        $tablica = mysqli_fetch_array(mysqli_query($conn, $zapytanie));
+        echo tablica['miasto'];
+
+
+    }
+
+
+
+
+
+
+?>
+
 </html>
