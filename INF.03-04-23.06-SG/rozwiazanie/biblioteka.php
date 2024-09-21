@@ -23,8 +23,8 @@
         </a>
         <img src="biblioteka.png" alt="książki">
     </div>
-    <div id="prawy_duzy">
-        <div id="prawy1">
+
+    <div id="prawy1">
             <h3>Dodaj czytelnika</h3>
             <form action="biblioteka.php" method="POST">
                 imię: <input type="text" name="imie"> <br>
@@ -35,8 +35,8 @@
         </div>
         <div id="prawy2">
             <!--skrypt 2-->
+            
         </div>
-    </div>
     <div id="stopka">Projekt strony: Adam Strużyk 5TI</div>
 
 </body>

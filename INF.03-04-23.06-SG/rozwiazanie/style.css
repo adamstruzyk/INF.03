@@ -17,9 +17,52 @@
     color: white;
     height: 500px;
     width: 30%;
+    float: left;
 }
 
 #srodkowy
 {
-    
+    background-color: #E0F2F1;
+    height: 500px;
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+#stopka
+{
+    clear: both;
+}
+
+#prawy1
+{
+    background-color: #E0F2F1;
+    height: 250px;
+    width: 40%;
+    float: right;
+}
+
+#prawy2
+{
+    background-color: #B2DFDB;
+    height: 250px;
+    width: 40%;
+    float: right;
+}
+
+h3
+{
+    text-align: center;
+}
+
+img
+{
+    padding: 5px;
+    height: 150px;
+    border: 1px dotted #004D40;
+    border-radius: 5px;
+}
+
+input
+{
+    margin: 10px;
 }
