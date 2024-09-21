@@ -1,0 +1,25 @@
+*
+{
+    font-family: Verdana;
+}
+
+#baner,#stopka
+{
+    background-color: #004D40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#lewy
+{
+    background-color: #80CBC4;
+    color: white;
+    height: 500px;
+    width: 30%;
+}
+
+#srodkowy
+{
+    
+}
