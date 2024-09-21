@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salon kosmetyczny</title>
     <link rel="stylesheet" href="styl7.css" />
+    <script src="skrypt.js"></script>
   </head>
   <body>
     <div id="lewy_duzy">
@@ -34,11 +35,13 @@
     </div>
     <div id="prawy2">
       <h3>Kalkulator ceny wizyty</h3>
-      <input type="checkbox" />Peeling <br />
-      <input type="checkbox" />Maska <br />
-      <input type="checkbox" />Masaż twarzy <br />
-      <input type="checkbox" />Makijaż <br />
-      <input type="button" onclick="" value="Oblicz cenę" />
+      <input type="checkbox" id="p1" />Peeling <br />
+      <input type="checkbox" id="p2" />Maska <br />
+      <input type="checkbox" id="p3" />Masaż twarzy <br />
+      <input type="checkbox" id="p4" />Makijaż <br />
+      <input type="button" onclick="oblicz()" value="Oblicz cenę" />
+
+      <p id="wynik"></p>
     </div>
 
     <div id="stopka">
