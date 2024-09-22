@@ -81,7 +81,7 @@
             {
               $tablica = mysqli_fetch_array($wynik);
 
-              echo "<li>Dnia ".$tablica['dataWyjazdu']." pojechaliśmy do ".$tablica['cel']."</li><br>";
+              echo "<li>Dnia ".$tablica['dataWyjazdu']." pojechaliśmy do ".$tablica['cel']."</li>";
             }
           }
 
