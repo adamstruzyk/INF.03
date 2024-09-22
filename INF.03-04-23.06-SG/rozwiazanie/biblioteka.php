@@ -56,11 +56,11 @@
                 //pobranie danych z formularza
                 @$imie = $_POST['imie'];
                 @$nazwisko = $_POST['nazwisko'];
-
-                if(isset($imie) && isset($nazwisko))
+                @$symbol = $_POST['nazwisko'];
+                if(isset($imie) && isset($nazwisko) && isset($symbol))
                 {
                     //wyslanie zapytania
-                    $zapytanie2 = "INSERT INTO `czytelnicy`(`imie`, `nazwisko`) VALUES ('$imie','$nazwisko');";
+                    $zapytanie2 = "INSERT INTO `czytelnicy`(`imie`, `nazwisko`,`kod`) VALUES ('$imie','$nazwisko',`$symbol`);";
                     $wynik = mysqli_query($conn,$zapytanie2);
                     //wypisanie tekstu
                     echo "Czytelnik $imie $nazwisko został(a) dodany do bazy danych";
