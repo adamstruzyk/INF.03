@@ -12,11 +12,43 @@
     </div>
     <div id="baner2">
       <h1>TERMINARZ</h1>
-      <p>najbliższe zadania:</p>
-      <!--skrypt 1-->
+      <p>najbliższe zadania:
+        <?php
+          //polaczenie z baza danych
+          $conn = mysqli_connect('localhost','root','','terminarz');
+          if(!$conn)
+          {
+            exit();
+          }
+          else
+          {
+            $zapytanie = 'SELECT DISTINCT `wpis` FROM `zadania` WHERE `dataZadania` BETWEEN "2020-07-01" AND "2020-07-07" AND `wpis` NOT LIKE "";';
+            $wynik = mysqli_query($conn,$zapytanie);
+
+            while($tablica = mysqli_fetch_array($wynik))
+            {
+              echo $tablica['wpis']."; ";
+            }
+
+          }
+          mysqli_close($conn);
+        ?>
+        </p>
     </div>
     <div id="glowny">
-      <!--skrypt 2-->
+      <?php
+        //polaczenie z baza danych
+        $conn = mysqli_connect('localhost','root','','terminarz');
+        if(!$conn)
+        {
+          exit();
+        }
+        else
+        {
+          $zapytanie = 'SELECT `dataZadania`,`wpis` FROM `zadania` WHERE `dataZadania` LIKE "%-07-%";';
+        }
+        mysqli_close($conn);
+      ?>
     </div>
     <div id="stopka">
       <a href="sierpien.html">Terminarz na sierpień</a>
@@ -24,3 +56,4 @@
     </div>
   </body>
 </html>
+
