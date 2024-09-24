@@ -35,6 +35,7 @@
         ?>
         </p>
     </div>
+
     <div id="glowny">
       <?php
         //polaczenie z baza danych
@@ -46,6 +47,18 @@
         else
         {
           $zapytanie = 'SELECT `dataZadania`,`wpis` FROM `zadania` WHERE `dataZadania` LIKE "%-07-%";';
+          $wynik = mysqli_query($conn, $zapytanie);
+
+          $text = "";
+          while($tablica = mysqli_fetch_array($wynik))
+          {
+            $text .= "<div class='kalendarz'>";
+            $text .= "<h6>".$tablica['dataZadania']."</h6>";
+            $text .= "<p>".$tablica['wpis']."</p>";
+            $text .= "</div>";
+          }
+          echo $text;
+
         }
         mysqli_close($conn);
       ?>

@@ -18,9 +18,13 @@
 {
     width: 70%;
 }
-
+#glowny
+{
+    clear: both;
+}
 .kalendarz
 {
+    float: left;
     background-color: #9FA8DA;
     width: 160px;
     height: 85px;
@@ -41,6 +45,7 @@
     color: white;
     padding: 5px;
     text-align: right;
+    clear: both;
 }
 
 h6
