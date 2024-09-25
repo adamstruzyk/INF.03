@@ -16,7 +16,47 @@
     </div>
     <div id="srodkowy">
         <a href="cennik.php">CENNIK</a>
+        <table>
         <!--SKRYPT-->
+        <?php
+            //polaczenie sie z baza 
+            $conn = mysqli_connect('localhost','root','','wynajem');
+            if(!$conn)
+            {
+                exit();
+            }
+            else
+            {
+                $zapytanie = 'SELECT * FROM `pokoje`;';
+                $wynik = mysqli_query($conn,$zapytanie);
+                $text = "";
+
+                while($tabela = mysqli_fetch_array($wynik))
+                {
+                    $text .= "<tr>";
+
+                    $text .= "<td>";
+                    $text .= $tabela['id'];
+                    $text .= "</td>";
+
+                    $text .= "<td>";
+                    $text .= $tabela['nazwa'];
+                    $text .= "</td>";
+
+                    $text .= "<td>";
+                    $text .= $tabela['cena'];
+                    $text .= "</td>";
+
+                    $text .= "</tr>";
+
+                }
+                echo $text;
+            }
+
+            mysqli_close($conn);
+        ?>
+        </table>
+
     </div>
     <div id="prawy">
       <a href="kalkulator.html">KALKULATOR</a>
@@ -27,3 +67,4 @@
     </div>
   </body>
 </html>
+
