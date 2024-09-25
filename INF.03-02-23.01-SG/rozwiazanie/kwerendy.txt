@@ -1,0 +1,5 @@
+Zapytanie 1: SELECT * FROM `pokoje`;
+Zapytanie 2: SELECT `id_pok`,`sezon` FROM `rezerwacje` WHERE `liczba_dn` > 7;
+Zapytanie 3: SELECT SUM(`liczba_dn`) FROM `rezerwacje` WHERE sezon = "zima";
+Zapytanie 4: UPDATE `rezerwacje` SET `liczba_dn`= 4 WHERE `liczba_dn` < 4;
+Zapytanie 5: CREATE USER `najemca`@`localhost` IDENTIFIED BY "n@JEM1@!";
