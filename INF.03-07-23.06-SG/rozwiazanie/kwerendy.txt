@@ -1,0 +1,4 @@
+Zapytanie 1: INSERT INTO `czytelnicy`(`imie`, `nazwisko`, `kod`) VALUES ('Ewelina','Romanowska','56677');
+Zapytanie 2: SELECT `imie`,`nazwisko` FROM `czytelnicy` ORDER BY `nazwisko` ASC;
+Zapytanie 3: SELECT `tytul` FROM `ksiazki` JOIN autorzy ON ksiazki.id_autor = autorzy.id WHERE autorzy.nazwisko LIKE "Sienkiewicz";
+Zapytanie 4: SELECT autorzy.`nazwisko`, COUNT(ksiazki.id_autor) AS `ile_tytulow` FROM `autorzy` JOIN ksiazki ON autorzy.id = ksiazki.id_autor GROUP BY autorzy.nazwisko;
