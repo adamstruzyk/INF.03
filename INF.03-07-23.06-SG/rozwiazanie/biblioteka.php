@@ -18,7 +18,28 @@
         symbol: <input type="number" name="symbol" /> <br />
         <input type="submit" value="AKCEPTUJ" />
       </form>
-      <!--skrypt 1-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','biblioteka');
+        if(!$conn)
+        {
+          exit();
+        }
+        else
+        {
+          //pobranie danych z formularza
+          @$imie = $_POST['imie'];
+          @$nazwisko = $_POST['nazwisko'];
+          @$symbol = $_POST['symbol'];
+          if(isset($imie) && isset($nazwisko) && isset($symbol))
+          {
+            $zapytanie = "INSERT INTO `czytelnicy`(`imie`, `nazwisko`, `kod`) VALUES ('$imie','$nazwisko','$symbol');";
+            $wynik = mysqli_query($conn,$zapytanie);
+            echo "Dodano czytelnika $imie $nazwisko";
+          }
+        }
+
+        mysqli_close($conn);
+      ?>
     </div>
     <div id="srodkowy">
       <img src="biblioteka.png" alt="biblioteka" />
@@ -30,11 +51,36 @@
     <div id="prawy">
       <h4>Nasi czytelnicy:</h4>
       <ol>
-        <!--skrypt 2-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','biblioteka');
+          if(!$conn)
+          {
+            exit();
+          }
+          else
+          {
+            $zapytanie = "SELECT `imie`,`nazwisko` FROM `czytelnicy` ORDER BY `nazwisko` ASC;";
+            $wynik = mysqli_query($conn, $zapytanie);
+            $text = "";
+            while($tablica = mysqli_fetch_array($wynik))
+            {
+              $text .= "<li>";
+              $text .= $tablica['imie']." ".$tablica['nazwisko'];
+              $text .= "</li>";
+            }
+            echo $text;
+          }
+
+          mysqli_close($conn);
+        ?>
       </ol>
     </div>
     <div id="stopka">
       <p>Projekt witryny: Adam Strużyk 5TI</p>
     </div>
   </body>
+
+
+
+
 </html>
