@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko` FROM `matematycy` WHERE `rok_urodzenia` > 1700;
+Zapytanie 2: SELECT `id`,`nazwisko` FROM `matematycy` WHERE `liczba_publikacji` > 10 AND `liczba_publikacji` < 30;
+Zapytanie 3: SELECT SUM(`liczba_publikacji`) FROM `matematycy` WHERE`rok_urodzenia` > 1750;
+Zapytanie 4: CREATE TABLE publikacje(id int PRIMARY KEY NOT NULL AUTO_INCREMENT, tytul text, rok int);
