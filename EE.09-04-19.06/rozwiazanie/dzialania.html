@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Działania matematyczne</title>
+    <link rel="stylesheet" href="styl.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div id="baner1">
@@ -22,16 +24,22 @@
         <h4>Tabliczka mnożenia</h4>
       </a>
     </div>
+
     <div id="lewy">
       <h3>Proste działania</h3>
       liczba A: <input type="text" id="liczba1" /> <br />
       liczba B: <input type="text" id="liczba2" /> <br />
-      <input type="button" value="+" onclick="dodawanie()" />
-      <input type="button" value="-" onclick="odejmowanie()" />
-      <input type="button" value="*" onclick="mnozenie()" />
-      <input type="button" value="/" onclick="dzielenie()" />
-      <input type="button" value="A^B" onclick="potegowanie()" />
+      <button onclick="dodawanie()">+</button>
+      <button onclick="odejmowanie()">-</button>
+      <button onclick="mnozenie()">*</button>
+      <button onclick="dzielenie()">/</button>
+      <button onclick="potegowanie()">A^B</button>
+
+      <p id="wynik">
+        <!--wynik dzialania skryptu-->
+      </p>
     </div>
+
     <div id="prawy">
       <ul>
         <li>dodawanie</li>
