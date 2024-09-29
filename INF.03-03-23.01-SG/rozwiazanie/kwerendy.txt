@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `nazwa`,`ulica` FROM `kwiaciarnie` WHERE `miasto` LIKE "Malbork";
+Zapytanie 2:
+Zapytanie 3:
+Zapytanie 4:
