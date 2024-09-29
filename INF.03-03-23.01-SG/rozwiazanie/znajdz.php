@@ -30,10 +30,10 @@
       </ol>
     </div>
     <div id="prawy">
-      <h2>Strona dla miłośników kwiatów</h2>
-      <img src="gerbera.jpg" alt="gerbera" />
-      <img src="gozdzik.jpg" alt="goździk" />
-      <img src="roza.jpg" alt="róża" />
+    <h2>Znajdź kwiaciarnię</h2>
+        <form method="post">
+            Podaj nazwę miasta: <input type="text" name="miasto"> <input type="submit" value="SPRAWDŹ">
+        </form>
     </div>
     <div id="stopka">
       <p>Stronę opracował: Adam Strużyk 5TI</p>
