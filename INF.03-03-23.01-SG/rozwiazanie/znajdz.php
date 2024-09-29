@@ -34,9 +34,28 @@
         <form method="post">
             Podaj nazwę miasta: <input type="text" name="miasto"> <input type="submit" value="SPRAWDŹ">
         </form>
+        <?php
+            $conn = mysqli_connect('localhost','root','','kwiaciarnia');
+            if(!$conn){
+                exit();
+            }
+            else{
+                @$miasto = $_POST['miasto'];
+                if(isset($miasto))
+                {
+                    $zapytanie = "SELECT `nazwa`,`ulica` FROM `kwiaciarnie` WHERE `miasto` LIKE '$miasto';";
+                    $wynik = mysqli_query($conn,$zapytanie);
+                    $tab = mysqli_fetch_array($wynik);
+                    echo "<h3> ".$tab['nazwa'].", ".$tab['ulica']."</h3>";
+                }
+            }
+            mysqli_close($conn);
+        ?>
     </div>
     <div id="stopka">
       <p>Stronę opracował: Adam Strużyk 5TI</p>
     </div>
   </body>
 </html>
+
+
