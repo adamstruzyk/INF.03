@@ -1,6 +1,30 @@
 var id_zamowienia = 0;
 zaznaczajaca_braki();
 
+function zamawiajaca(a)
+{
+    id_zamowienia++;
+    let nazwa = "";
+    switch (a)
+    {
+        case 1:
+            nazwa = document.getElementById("prod1").innerText;
+            break;
+        case 2:
+            nazwa = document.getElementById("prod2").innerText;
+            break;
+        case 3:
+            nazwa = document.getElementById("prod3").innerText;
+            break;     
+        case 4:
+            nazwa = document.getElementById("prod4").innerText;
+            break;      
+    }
+    let komunikat = "Zamówienie nr: " + id_zamowienia + " Produkt: " + nazwa;
+    alert(komunikat);
+}
+
+
 function aktualizuj(a)
 {
     let nowa_wartosc = prompt("Podaj nową ilość:")
