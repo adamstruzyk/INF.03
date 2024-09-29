@@ -1,0 +1,56 @@
+*
+{
+    font-family: Verdana;
+    text-align: center;
+}
+
+#baner
+{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+}
+#lewy
+{
+    background-color: palegreen;
+    width: 30%;
+    /*tutaj height powinien wynosic 500px, ale w arkuszu nie przewidzieli,
+    że strona sie rozjeżdza (przez to ze #prawy razem z paddingiem ma 600px wysokosci)*/
+    height: 600px;
+    float: left;
+}
+#prawy{
+    background-color: honeydew;
+    width: 70%;
+    height: 500px;
+    padding-top: 100px;
+    float: left;
+}
+#stopka
+{
+    background-color: palegreen;
+    padding: 3px;
+    clear: both;
+}
+table,td{
+    border: 1px solid darkgreen;
+    border-collapse: collapse;
+}
+table{
+    margin: auto;
+    width: 95%;
+}
+td, th{
+    padding: 20px 0px 20px 0px;
+}
+button{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: honeydew;
+    color: darkgreen;
+    padding: 5px;
+}
