@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `nazwa`,`ulica` FROM `kwiaciarnie` WHERE `miasto` LIKE "Malbork";
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 2: SELECT `id_kwiaciarni`, COUNT(*) FROM `zamowienia` GROUP BY `id_kwiaciarni`;
+Zapytanie 3: SELECT `nazwa`,`miasto`, zamowienia.kwiaty FROM `kwiaciarnie` JOIN zamowienia ON zamowienia.id_kwiaciarni = kwiaciarnie.id_kwiaciarni WHERE zamowienia.data LIKE "2017-01-07";
+Zapytanie 4: CREATE TABLE klienci(id int PRIMARY KEY AUTO_INCREMENT NOT NULL, imie varchar(15), nazwisko varchar(15), rabat int);
