@@ -14,10 +14,10 @@
 {
     background-color: palegreen;
     width: 30%;
-    /*tutaj height powinien wynosic 500px, ale w arkuszu nie przewidzieli,
-    że strona sie rozjeżdza (przez to ze #prawy razem z paddingiem ma 600px wysokosci)*/
-    height: 600px;
+    height: 500px;
     float: left;
+    /*opcjonalne padding bottom zeby strona wygladala jak na obrazku w arkuszu*/
+    padding-bottom: 100px;
 }
 #prawy{
     background-color: honeydew;
