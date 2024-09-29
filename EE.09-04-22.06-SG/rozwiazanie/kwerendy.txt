@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `nazwa`,`ilosc`, producenci.nazwaProd FROM `materialy` JOIN producenci ON producenci.id = materialy.Producenci_id WHERE `ilosc` > 9;
 Zapytanie 2: SELECT `nazwaJedn`, materialy.nazwa, producenci.nazwaProd FROM `jednostki` JOIN materialy ON jednostki.id = materialy.Jednostki_id JOIN producenci ON producenci.id = materialy.Producenci_id;
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 3: CREATE USER `zaopatrzenie`@`localhost` IDENTIFIED BY "Z@op@trzenie";
+Zapytanie 4: GRANT SELECT, UPDATE, INSERT, DELETE ON firma.* TO `zaopatrzenie`@`localhost`;
