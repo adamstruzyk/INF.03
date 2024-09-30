@@ -12,37 +12,45 @@
 
       <p>
         Podaj kolor tła <br />
-        <button id="indigo">Indigo</button>
-        <button id="steelblue">SteelBlue</button>
-        <button id="olive">Olive</button>
+        <button onclick="zmien_tlo(1)" id="indigo">Indigo</button>
+        <button onclick="zmien_tlo(2)" id="steelblue">SteelBlue</button>
+        <button onclick="zmien_tlo(3)" id="olive">Olive</button>
       </p>
       <p>
         Podaj kolor czcionki <br />
-        <select name="kolor">
-          <option value="white">White</option>
-          <option value="tan">Tan</option>
-          <option value="bisque">Bisque</option>
-          <option value="plum">Plum</option>
+        <select id="kolor" onchange="kolor_czcionki()">
+          <option value="1">White</option>
+          <option value="2">Tan</option>
+          <option value="3">Bisque</option>
+          <option value="4">Plum</option>
         </select>
       </p>
       <p>
         Podaj rozmiar czcionki w procentach, np. 200% <br />
-        <input type="text" value="100%" id="rozmiar" />
+        <input type="text" value="100%" id="rozmiar" onblur="zmien_rozmiar()" />
       </p>
       <p>
         Czy rysunek ma mieć ramkę? <br />
-        <input type="checkbox" checked /> Rysuj ramkę
+        <input
+          type="checkbox"
+          id="ramka"
+          checked
+          onchange="zmien_obramowanie()"
+        />
+        Rysuj ramkę
       </p>
       <p>
         Jaki jest typ punktora listy? <br />
-        <input type="radio" name="punktor" checked /> dysk <br />
-        <input type="radio" name="punktor" /> kwadrat <br />
-        <input type="radio" name="punktor" /> okrąg <br />
+        <input type="radio" name="punktor" onclick="punktor(1)" checked /> dysk
+        <br />
+        <input type="radio" name="punktor" onclick="punktor(2)" /> kwadrat
+        <br />
+        <input type="radio" name="punktor" onclick="punktor(3)" /> okrąg <br />
       </p>
     </div>
     <div id="prawy">
-      <img src="gibraltar.jpg" alt="półwysep Gibraltar" />
-      <ul>
+      <img src="gibraltar.jpg" alt="półwysep Gibraltar" id="zdjecie" />
+      <ul id="lista">
         <li>Element 1</li>
         <li>Element 2</li>
         <li>Element 3</li>
@@ -60,5 +68,6 @@
     <div id="stopka">
       <p>Autor: Adam Strużyk 5TI</p>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
