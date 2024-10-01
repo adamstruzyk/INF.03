@@ -26,6 +26,7 @@ body{
 #stopka{
     background-color: #00600F;
     color: white;
+    clear: both;
 }
 
 h5{
@@ -43,4 +44,5 @@ h2{
     margin: 10px;
     border: 1px solid #00600F;
     width: 300px;
+    float: left;
 }
