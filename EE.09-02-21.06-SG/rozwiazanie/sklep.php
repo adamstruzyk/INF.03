@@ -50,10 +50,26 @@
         Cena: <input type="text" name="cena" /> 
         <input type="submit" value="Dodaj produkt" />
       </form>
+      <?php
+        $conn = mysqli_connect('localhost','root','','dane2');
+        if(!$conn){
+          exit();
+        }
+        else{
+          @$nazwa = $_POST['nazwa'];
+          @$cena = $_POST['cena'];
+          if(isset($nazwa) and isset($cena)){
+            $zapytanie = "INSERT INTO `produkty`(`Rodzaje_id`, `Producenci_id`, `nazwa`, `ilosc`, `opis`, `cena`, `zdjecie`) VALUES (1,4,'$nazwa',10,NULL,'$cena','owoce.jpg');";
+            mysqli_query($conn, $zapytanie);
+
+          }
+
+        }
+        mysqli_close($conn);
+      ?>
       <p>Stronę wykonał: Adam Strużyk</p>
     </div>
   </body>
-
 </html>
 
 
