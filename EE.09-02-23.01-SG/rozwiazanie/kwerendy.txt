@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `nazwa`,`pasmo` FROM `szczyty` WHERE `wysokosc` > 1500;
+Zapytanie 2: SELECT `nazwa` FROM `szczyty` ORDER BY wysokosc DESC LIMIT 1;
+Zapytanie 3: CREATE USER `leon`@`localhost` IDENTIFIED BY "Leon%Zawodowiec";
+Zapytanie 4: GRANT SELECT, INSERT, DELETE, UPDATE ON gory.* TO `leon`@`localhost`;
