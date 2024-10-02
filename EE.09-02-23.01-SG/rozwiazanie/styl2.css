@@ -1,0 +1,48 @@
+*{
+    font-family: Garamond;
+    background-color: mistyrose;
+    color: rgb(62, 39,35);
+    text-align: center;
+}
+
+#lewy{
+    width: 20%;
+    height: 600px;
+    margin: 30px;
+    box-shadow: 15px 15px 10px dimgray;
+    overflow: auto;
+    float: left;
+}
+
+#lewy img{
+    width: 100%;
+}
+
+#prawy{
+    width: 65%;
+    height: 600px;
+    float: left;
+}
+img[alt="miniatura"]{
+    width: 140px;
+    padding: 2px;
+    border-radius: 5%;
+}
+
+img[alt="miniatura"]:hover{
+    border: 1px dotted black;
+}
+
+#duzy{
+    width: 500px;
+    margin: 30px;
+    box-shadow: 15px 15px 10px dimgray;
+}
+
+table{
+    border: 1px dashed black;
+    width: 100%;
+}
+#stopka{
+    clear: both;
+}
