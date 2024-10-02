@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria</title>
     <link rel="stylesheet" href="styl2.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div id="baner">
@@ -30,14 +31,14 @@
     </div>
     <div id="prawy">
       <button onclick="prev()">prev</button>
-      <img src="1.jpg" id="duzy" alt="Galeria" />
+      <img src="1.jpg" id="aktywne" alt="Galeria" />
       <button onclick="next()">next</button>
       <hr />
-      <img src="1.jpg" alt="miniatura" onclick="" />
-      <img src="2.jpg" alt="miniatura" onclick="" />
-      <img src="3.jpg" alt="miniatura" onclick="" />
-      <img src="4.jpg" alt="miniatura" onclick="" />
-      <img src="5.jpg" alt="miniatura" onclick="" />
+      <img src="1.jpg" alt="miniatura" onclick="miniatura(1)" />
+      <img src="2.jpg" alt="miniatura" onclick="miniatura(2)" />
+      <img src="3.jpg" alt="miniatura" onclick="miniatura(3)" />
+      <img src="4.jpg" alt="miniatura" onclick="miniatura(4)" />
+      <img src="5.jpg" alt="miniatura" onclick="miniatura(5)" />
     </div>
     <div id="stopka">
       <a href="https://pixabay.com">Więcej obrazów</a>
