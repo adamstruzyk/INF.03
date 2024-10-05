@@ -45,7 +45,24 @@
           <th>Gatunek</th>
           <th>Występowanie</th>
         </tr>
-        <!--skrypt-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','wedkowanie');
+          if(!$conn){
+            exit();
+          }
+          else{
+            $zapytanie1 = "SELECT `id`,`nazwa`,`wystepowanie` FROM `ryby` WHERE `styl_zycia` = 1;";
+            $wynik = mysqli_query($conn,$zapytanie1);
+            $text = '';
+            while($tablica = mysqli_fetch_array($wynik)){
+              $text .= '<tr>';
+              $text .= '<td>'.$tablica['id'].'</td>'.'<td>'.$tablica['nazwa'].'</td>'.'<td>'.$tablica['wystepowanie'].'</td>';
+              $text .= '</tr>';
+            }
+            echo $text;
+          }
+          mysqli_close($conn);
+        ?>
       </table>
     </div>
 
