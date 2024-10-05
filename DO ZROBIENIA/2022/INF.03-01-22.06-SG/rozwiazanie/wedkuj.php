@@ -16,6 +16,10 @@
         <!--skrypt-->
       </ol>
     </div>
+    <div id="prawy">
+      <img src="ryba1.jpg" alt="Sum" /> <br />
+      <a href="kwerendy.txt">Pobierz kwerendy</a>
+    </div>
     <div id="lewy2">
       <h3>Ryby drapieżne naszych wód</h3>
       <table>
@@ -27,10 +31,7 @@
         <!--skrypt-->
       </table>
     </div>
-    <div id="prawy">
-      <img src="ryba1.jpg" alt="Sum" /> <br />
-      <a href="kwerendy.txt">Pobierz kwerendy</a>
-    </div>
+
     <div id="stopka">
       <p>Stronę wykonał: Adam Strużyk</p>
     </div>
