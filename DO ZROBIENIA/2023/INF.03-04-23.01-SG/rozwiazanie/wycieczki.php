@@ -52,7 +52,22 @@
     </div>
     <div id="srodkowy">
       <h2>Nasze zdjęcia</h2>
-      <!--skrypt 2-->
+      <?php
+          $conn = mysqli_connect('localhost','root','','biuro');
+          if (!$conn){
+            exit();
+          }
+          else{
+            $zapytanie2 = "SELECT `nazwaPliku`,`podpis` FROM `zdjecia` ORDER BY `podpis` DESC;";
+            $wynik = mysqli_query($conn,$zapytanie2);
+            $text = "";
+            while($tablica = mysqli_fetch_array($wynik)){
+              $text .= '<img src="'.$tablica['nazwaPliku'].'" alt="'.$tablica['podpis'].'">';
+            }
+            echo $text;
+          }
+          mysqli_close($conn);
+        ?>
     </div>
     <div id="prawy">
       <h2>Skontaktuj się</h2>
