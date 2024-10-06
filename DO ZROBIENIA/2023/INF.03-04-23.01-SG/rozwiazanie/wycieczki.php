@@ -13,7 +13,24 @@
     <div id="dane">
       <h3>Wycieczki, na które są wolne miejsca</h3>
       <ul>
-        <!--skrypt 1-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','biuro');
+          if (!$conn){
+            exit();
+          }
+          else{
+            $zapytanie1 = "SELECT `id`,`dataWyjazdu`,`cel`,`cena` FROM `wycieczki` WHERE `dostepna` = TRUE;";
+            $wynik = mysqli_query($conn,$zapytanie1);
+            $text = "";
+            while($tablica = mysqli_fetch_array($wynik)){
+              $text .= '<li>';
+              $text .= $tablica['id'].'. dnia '.$tablica['dataWyjazdu'].' jedziemy do '.$tablica['cel'].', cena: '.$tablica['cena'];
+              $text .= '</li>';
+            }
+            echo $text;
+          }
+          mysqli_close($conn);
+        ?>
       </ul>
     </div>
     <div id="lewy">
@@ -47,3 +64,4 @@
     </div>
   </body>
 </html>
+
