@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `haslo` FROM `uzytkownicy` WHERE `login` = "Justyna";
+Zapytanie 2: SELECT COUNT(*) FROM `dane`;
+Zapytanie 3: SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM `uzytkownicy` JOIN dane ON dane.id = uzytkownicy.id WHERE uzytkownicy.login = "Justyna";
+Zapytanie 4: ALTER TABLE `dane` ADD `stanowisko` text;
