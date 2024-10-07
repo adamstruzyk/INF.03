@@ -34,7 +34,7 @@
         <input type="password" name="haslo"/> <br />
         <input type="submit" value="Zaloguj" />
       </form>
-    </div>
+    </div> 
     <div id="prawy">
       <h3>Wizytówka</h3>
       <div id="wizytowka">
@@ -61,8 +61,14 @@
                   $zapytanie3 = "SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM `uzytkownicy` JOIN dane ON dane.id = uzytkownicy.id WHERE uzytkownicy.login = '$login';";
                   $wynik = mysqli_query($conn, $zapytanie3);
                   $tablica = mysqli_fetch_array($wynik);
-                  
-                  echo '<img src="" alt="">';
+
+                  echo '<img src="'.$tablica['zdjecie'].'" alt="osoba">';
+                  //wiek osoby
+                  $wiek = date('Y') - $tablica['rok_urodz'];
+                  echo '<h4>'.$tablica['login'].' ('.$wiek.')</h4>';
+                  echo '<p>hobby: '.$tablica['hobby'].'</p>';
+                  echo '<h1><img src="icon-on.png">'.$tablica['przyjaciol'].'</h1>';
+                  echo '<a href="dane.html"><button>Więcej informacji</button></a>';
                 }
                 else{
                   echo "hasło nieprawidłowe";
