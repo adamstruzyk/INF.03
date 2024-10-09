@@ -1,0 +1,29 @@
+*{
+    font-family: Cambria;
+}
+
+#baner,#stopka{
+    background-color: #829EB9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#lewy,#prawy{
+    background-color: #B3C6D9;
+    height: 400px;
+    width: 25%;
+    padding-top: 100px;
+}
+#srodkowy{
+    background-color: #E0E9F1;
+    height: 400px;
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+}
+#lewy,#prawy,#srodkowy{
+    float:left;
+}
+#stopka{
+    clear: both;
+}
