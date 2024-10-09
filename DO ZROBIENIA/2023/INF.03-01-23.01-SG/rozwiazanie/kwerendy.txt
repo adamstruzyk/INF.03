@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `cena`,`pojemnosc` FROM `farby` WHERE `kolor` = "czerwony";
+Zapytanie 2: SELECT `kolor`, (`cena`/`pojemnosc`) AS `cena jednostkowa` FROM `farby`;
+Zapytanie 3:
+Zapytanie 4:
