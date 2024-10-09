@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>malarz</title>
     <link rel="stylesheet" href="styl_1.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div id="baner">
@@ -23,8 +24,8 @@
     </div>
     <div id="srodkowy">
       <h2>Zapotrzebowanie na farbę</h2>
-      Powierzchnia malowania (m<sup>2</sup>):<input type="number" />
-      <button onclick="">Policz</button>
+      Powierzchnia malowania (m<sup>2</sup>):<input type="number" id="metry" />
+      <button onclick="oblicz()">Policz</button>
       <p id="wynik">
         <!--wynik skryptu-->
       </p>
