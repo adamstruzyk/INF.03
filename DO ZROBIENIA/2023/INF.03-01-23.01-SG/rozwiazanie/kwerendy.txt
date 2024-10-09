@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `cena`,`pojemnosc` FROM `farby` WHERE `kolor` = "czerwony";
-Zapytanie 2: SELECT `kolor`, (`cena`/`pojemnosc`) AS `cena jednostkowa` FROM `farby`;
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 2: SELECT `kolor`, ROUND(`cena`/`pojemnosc`,2) AS `cena jednostkowa` FROM `farby`;
+Zapytanie 3: SELECT farby.kolor, malowanie.liczba_puszek FROM `farby` JOIN malowanie ON farby.id_farby = malowanie.id_farby WHERE malowanie.id_pomieszczenia = 3;
+Zapytanie 4: CREATE VIEW pomieszczenie1 AS SELECT `id_sciany`,`id_farby`,`liczba_puszek` FROM malowanie WHERE `id_pomieszczenia` = 1;
