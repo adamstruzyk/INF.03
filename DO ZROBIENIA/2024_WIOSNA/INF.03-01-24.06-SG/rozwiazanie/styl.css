@@ -51,9 +51,9 @@ h1,h2{
 a, dt{
     color: white;
 }
-dl{
+dd{
     margin: 1%;
 }
-dl:hover{
+dd:hover{
     background-color: lightgreen;
 }
