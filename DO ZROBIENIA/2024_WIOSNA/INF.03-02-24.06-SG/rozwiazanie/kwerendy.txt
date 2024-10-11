@@ -1,0 +1,7 @@
+Zapytanie 1: INSERT INTO `logowanie`(`id`, `nick`, `haslo`) VALUES (3,'Jeremi','Jer123');
+Zapytanie 2:
+Zapytanie 3:
+Zapytanie 4:
+Zapytanie 5:
+
+
