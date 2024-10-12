@@ -1,9 +1,0 @@
-"Świetnie!",
-"Kto gra główną rolę?",
-"Lubisz filmy Tego reżysera?",
-"Będę 10 minut wcześniej",
-"Może kupimy sobie popcorn?",
-"Ja wolę Colę",
-"Zaproszę jeszcze Grześka",
-"Tydzień temu też byłem w kinie na Diunie",
-"Ja funduję bilety"
