@@ -39,26 +39,26 @@ img{
     height: 470px;
     overflow: scroll;
 }
-#jolka,#krzysztof{
+.jolka,.krzysztof{
     border-radius: 5px;
     width: 90%;
     height: 70px;
     margin: 2%;
     padding: 3px;
 }
-#jolka{
+.jolka{
     background-color: #EEE;
     float: left;
 }
-#jolka img{
+.jolka img{
     float: left;
 }
-#krzysztof{
+.krzysztof{
     background-color: #CCC;
     float: right;
     text-align: right;
 }
-#krzysztof img{
+.krzysztof img{
     float: right;
 }
 button{

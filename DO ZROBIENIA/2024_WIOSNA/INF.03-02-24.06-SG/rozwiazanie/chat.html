@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
     <link rel="stylesheet" href="styl.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <aside id="boczny">
@@ -31,19 +32,19 @@
 
     <main id="glowny">
       <div id="chat">
-        <div id="jolka">
+        <div class="jolka">
           <img src="Jolka.jpg" />
           <p>Cześć idziesz jutro do kina?</p>
         </div>
-        <div id="krzysztof">
+        <div class="krzysztof">
           <img src="Krzysiek.jpg" />
           <p>Tak! A ty?</p>
         </div>
       </div>
       Wpisz wiadomość: <input type="text" id="wiadomosc" />
-      <button onclick="">Wyślij</button>
+      <button onclick="wyslij()">Wyślij</button>
       <br />
-      <button onclick="">Generuj losową odpowiedź</button>
+      <button onclick="los()">Generuj losową odpowiedź</button>
     </main>
     <footer id="stopka">
       <h5>Chat wykonał: Adam Strużyk 5TI</h5>
