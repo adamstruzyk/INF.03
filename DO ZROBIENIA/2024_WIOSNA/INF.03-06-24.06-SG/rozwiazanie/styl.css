@@ -1,0 +1,37 @@
+*{
+    font-family: Cambria;
+}
+header{
+    background-color: #C2185B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+main{
+    background-image: url(rozmycie.png);
+    height: 500px;
+}
+footer{
+    float:left; 
+    background-color: #C2185B;
+    color: white;
+    width: 25%;
+    height: 240px;
+}
+form div{
+    float: left;
+    background-color: #FCE4EC;
+    width: 25%;
+    height: 300px;
+    margin: 25px;
+    padding: 16px;
+}
+#form1{
+    visibility: visible;
+}
+#form2{
+    visibility: hidden;
+}
+#form3{
+    visibility: hidden;
+}
