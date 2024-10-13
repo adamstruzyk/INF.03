@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rejestracja</title>
     <link rel="stylesheet" href="styl.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -14,21 +15,30 @@
       <form>
         <div id="form1">
           <h2>Dane osobowe</h2>
-          <input type="text" placeholder="Wpisz imię..." required />
-          <input type="text" placeholder="Wpisz nazwisko..." required />
-          <button onclick="">Następna karta</button>
+          <input type="text" placeholder="Wpisz imię..." required id="imie" />
+          <input
+            type="text"
+            placeholder="Wpisz nazwisko..."
+            required
+            id="nazwisko"
+          />
+          <button onclick="blok1()">Następna karta</button>
         </div>
         <div id="form2">
           <h2>Dane kontaktowe</h2>
-          <input type="email" placeholder="Twój email..." />
-          <input type="tel" placeholder="Twój numer telefonu" />
-          <button onclick="">Następna karta</button>
+          <input type="email" placeholder="Twój email..." id="email" />
+          <input type="tel" placeholder="Twój numer telefonu" id="nrtel" />
+          <button onclick="blok2()">Następna karta</button>
         </div>
         <div id="form3">
           <h2>Hasło do logowania</h2>
-          <input type="password" placeholder="Podaj hasło" />
-          <input type="password" placeholder="Powtórz hasło" />
-          <button onclick="">Zatwierdź</button>
+          <input type="password" placeholder="Podaj hasło" id="haslo" />
+          <input
+            type="password"
+            placeholder="Powtórz hasło"
+            id="haslo_powtorzone"
+          />
+          <button onclick="blok3()">Zatwierdź</button>
         </div>
       </form>
     </main>
