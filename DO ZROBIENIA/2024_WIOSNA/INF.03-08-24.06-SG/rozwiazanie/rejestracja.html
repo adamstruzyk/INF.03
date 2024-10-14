@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <aside id="boczny">
+      <img src="obraz.png" alt="promocje" />
+      <h2>Sprawdź promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+      </table>
+    </aside>
+    <header id="baner">
+      <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main id="glowny">
+      <button onclick="">Klient</button>
+      <button onclick="">Adres</button>
+      <button onclick="">Kontakt</button>
+
+      <div id="blok1">
+        <p>Imię</p>
+        <input type="text" placeholder="Wpisz dane" />
+        <p>Nazwisko</p>
+        <input type="text" />
+        <p>Data urodzenia</p>
+        <input type="date" />
+      </div>
+
+      <div id="blok2">
+        <p>Ulica</p>
+        <input type="text" />
+        <p>Numer</p>
+        <input type="number" />
+        <p>Miasto</p>
+        <input type="text" />
+      </div>
+
+      <div id="blok3">
+        <p>Numer komórkowy</p>
+        <input type="tel" /> <input type="checkbox" />Akceptuję RODO
+        <button onclick="zatwierdz()">Zatwierdź dane</button>
+      </div>
+    </main>
+    <section id="pasek"></section>
+    <footer id="stopka"></footer>
+  </body>
+</html>
