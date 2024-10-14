@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `imie`,`miot` FROM `swinki` WHERE `data_ur` LIKE "2022-07-%";
 Zapytanie 2: SELECT DISTINCT swinki.data_ur, swinki.miot, rasy.rasa FROM `swinki` JOIN rasy ON rasy.id = swinki.rasy_id WHERE rasy.id = 1;
 Zapytanie 3: SELECT `imie`,`cena`,`opis` FROM `swinki` WHERE `rasy_id` = 1;
-Zapytanie 4:
+Zapytanie 4: SELECT `rasa` FROM `rasy`;
