@@ -38,7 +38,7 @@
       <a href="crested.php">Rasa Crested</a>
     </nav>
     <main>
-      <img src="peruwianka.jpg" alt="Świnka morska rasy peruwianka" />
+      <img src="crested.jpg" alt="Świnka morska rasy crested" />
       <?php
         $conn = mysqli_connect('localhost','root','','hodowla');
         if(!$conn)
@@ -46,7 +46,7 @@
           exit();
         }
         else{
-          $zapytanie2 = "SELECT DISTINCT swinki.data_ur, swinki.miot, rasy.rasa FROM `swinki` JOIN rasy ON rasy.id = swinki.rasy_id WHERE rasy.id = 1;";
+          $zapytanie2 = "SELECT DISTINCT swinki.data_ur, swinki.miot, rasy.rasa FROM `swinki` JOIN rasy ON rasy.id = swinki.rasy_id WHERE rasy.id = 7;";
           $wynik = mysqli_query($conn,$zapytanie2);
           $text = '';
           while($tablica = mysqli_fetch_array($wynik)){
@@ -67,7 +67,7 @@
           exit();
         }
         else{
-          $zapytanie3 = "SELECT `imie`,`cena`,`opis` FROM `swinki` WHERE `rasy_id` = 1;";
+          $zapytanie3 = "SELECT `imie`,`cena`,`opis` FROM `swinki` WHERE `rasy_id` = 7;";
           $wynik = mysqli_query($conn,$zapytanie3);
           $text = '';
           while($tablica = mysqli_fetch_array($wynik)){
