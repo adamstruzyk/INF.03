@@ -1,0 +1,42 @@
+*{
+    font-family: helvetica;
+}
+
+header,footer{
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+nav{
+    background-color: Peru;
+    width: 80%;
+    height: 40px;
+    padding-top: 20px;
+}
+main{
+    width: 80%;
+    height: 700px;
+    font-size: 120%;
+    overflow: auto;
+}
+aside{
+    background-color: peru;
+    color: white;
+    width: 20%;
+    height: 760px;
+    float: right;
+}
+a{
+    color: #DDD;
+    padding-left: 90px;
+    font-size: 140%;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+img{
+    float: left;
+    margin: 30px;
+}
