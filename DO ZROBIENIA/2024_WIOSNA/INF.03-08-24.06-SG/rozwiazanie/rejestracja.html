@@ -40,26 +40,27 @@
           type="text"
           placeholder="Wpisz dane"
           onfocusout="zwiekszPasek()"
+          id="imie"
         />
         <p>Nazwisko</p>
-        <input type="text" onfocusout="zwiekszPasek()" />
+        <input type="text" onfocusout="zwiekszPasek()" id="nazwisko" />
         <p>Data urodzenia</p>
-        <input type="date" onfocusout="zwiekszPasek()" />
+        <input type="date" onfocusout="zwiekszPasek()" id="data_ur" />
       </div>
 
       <div id="blok2">
         <p>Ulica</p>
-        <input type="text" onfocusout="zwiekszPasek()" />
+        <input type="text" onfocusout="zwiekszPasek()" id="ulica" />
         <p>Numer</p>
-        <input type="number" onfocusout="zwiekszPasek()" />
+        <input type="number" onfocusout="zwiekszPasek()" id="numer" />
         <p>Miasto</p>
-        <input type="text" onfocusout="zwiekszPasek()" />
+        <input type="text" onfocusout="zwiekszPasek()" id="miasto" />
       </div>
 
       <div id="blok3">
         <p>Numer komórkowy</p>
-        <input type="tel" onfocusout="zwiekszPasek()" /> <br />
-        <input type="checkbox" />Akceptuję RODO
+        <input type="tel" onfocusout="zwiekszPasek()" id="nrtel" /> <br />
+        <input type="checkbox" id="rodo" />Akceptuję RODO <br />
         <button onclick="zatwierdz()">Zatwierdź dane</button>
       </div>
     </main>
