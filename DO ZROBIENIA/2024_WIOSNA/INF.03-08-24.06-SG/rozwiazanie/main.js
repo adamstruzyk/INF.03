@@ -1,0 +1,3 @@
+function zwiekszPasek() {
+    alert('hello');
+}

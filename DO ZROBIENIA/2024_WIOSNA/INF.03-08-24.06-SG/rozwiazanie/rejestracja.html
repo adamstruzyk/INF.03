@@ -36,25 +36,30 @@
 
       <div id="blok1">
         <p>Imię</p>
-        <input type="text" placeholder="Wpisz dane" />
+        <input
+          type="text"
+          placeholder="Wpisz dane"
+          onfocusout="zwiekszPasek()"
+        />
         <p>Nazwisko</p>
-        <input type="text" />
+        <input type="text" onfocusout="zwiekszPasek()" />
         <p>Data urodzenia</p>
-        <input type="date" />
+        <input type="date" onfocusout="zwiekszPasek()" />
       </div>
 
       <div id="blok2">
         <p>Ulica</p>
-        <input type="text" />
+        <input type="text" onfocusout="zwiekszPasek()" />
         <p>Numer</p>
-        <input type="number" />
+        <input type="number" onfocusout="zwiekszPasek()" />
         <p>Miasto</p>
-        <input type="text" />
+        <input type="text" onfocusout="zwiekszPasek()" />
       </div>
 
       <div id="blok3">
         <p>Numer komórkowy</p>
-        <input type="tel" /> <input type="checkbox" />Akceptuję RODO
+        <input type="tel" onfocusout="zwiekszPasek()" /> <br />
+        <input type="checkbox" />Akceptuję RODO
         <button onclick="zatwierdz()">Zatwierdź dane</button>
       </div>
     </main>
