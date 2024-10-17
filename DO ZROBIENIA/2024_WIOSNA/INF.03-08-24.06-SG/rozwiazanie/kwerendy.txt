@@ -1,4 +1,0 @@
-Zapytanie 1: SELECT `imie`,`nazwisko` FROM `osoby` WHERE `dataUr` >= "2000-01-01";
-Zapytanie 2: SELECT DISTINCT `miasto` FROM `adresy` ORDER BY `miasto` ASC;
-Zapytanie 3: SELECT osoby.imie, osoby.nazwisko, telefony.numer FROM `osoby` JOIN telefony ON osoby.id = telefony.Osoby_id;
-Zapytanie 4: ALTER TABLE adresy ADD numerMieszkania int AFTER `numer`;
