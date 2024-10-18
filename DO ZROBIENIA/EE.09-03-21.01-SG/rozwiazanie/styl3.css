@@ -23,6 +23,7 @@
     float: left;
 }
 #prawy{
+    float: left;
     width: 60%;
     height: 400px;
     text-align: right;
@@ -30,6 +31,7 @@
 #stopka{
     background-color: #FF7F50;
     padding: 20px;
+    clear: both;
 }
 body{
     font-family: georgia;
