@@ -15,9 +15,9 @@
     </header>
     <menu id="menu">
       <form method="post">
-        <input type="radio" name="opcje" /> Wszystkie
-        <input type="radio" name="opcje" /> Ponad stan ostrzegawczy
-        <input type="radio" name="opcje" /> Ponad stan alarmowy
+        <input type="radio" name="opcje" /><span class="txt">Wszystkie</span> 
+        <input type="radio" name="opcje" /><span class="txt">Ponad stan ostrzegawczy</span> 
+        <input type="radio" name="opcje" /><span class="txt">Ponad stan alarmowy</span> 
         <input type="submit" value="Pokaż" />
       </form>
     </menu>

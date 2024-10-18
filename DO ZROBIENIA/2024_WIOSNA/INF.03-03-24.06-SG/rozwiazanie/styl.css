@@ -1,0 +1,51 @@
+*{
+    font-family: georgia;
+}
+#baner1,#baner2{
+    background-color: Navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+#menu{
+    clear: both;
+    background-color: navy;
+    padding: 20px;
+}
+.txt{
+    color: silver;
+    margin: 50px;
+}
+.txt:hover{
+    color: white;
+    text-decoration: underline;
+}
+#lewy,#prawy{
+    background-color: azure;
+    height: 550px;
+    float: left;
+}
+#lewy{
+    width: 70%;
+}
+#prawy{
+    width: 30%;
+}
+#stopka{
+    background-color: navy;
+    color: white;
+    clear: both;
+}
+table{
+    border: 1px solid navy;
+    margin: auto;
+    width: 70%;
+}
+tr{
+    background-color: skyblue;
+}
+#prawy img{
+    width: 90%;
+}
