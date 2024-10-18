@@ -43,7 +43,7 @@ table{
     margin: auto;
     width: 70%;
 }
-tr{
+tr:hover{
     background-color: skyblue;
 }
 #prawy img{

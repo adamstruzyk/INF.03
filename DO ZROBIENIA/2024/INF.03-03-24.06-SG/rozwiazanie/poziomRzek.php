@@ -13,14 +13,14 @@
     <header id="baner2">
       <h1>Rzeki w województwie dolnośląskim</h1>
     </header>
-    <menu id="menu">
+    <section id="menu">
       <form method="post">
-        <input type="radio" name="opcje" /><span class="txt">Wszystkie</span> 
-        <input type="radio" name="opcje" /><span class="txt">Ponad stan ostrzegawczy</span> 
-        <input type="radio" name="opcje" /><span class="txt">Ponad stan alarmowy</span> 
+        <span class="txt"><input type="radio" name="opcje" />Wszystkie</span> 
+        <span class="txt"><input type="radio" name="opcje" />Ponad stan ostrzegawczy</span> 
+        <span class="txt"><input type="radio" name="opcje" />Ponad stan alarmowy</span> 
         <input type="submit" value="Pokaż" />
       </form>
-    </menu>
+    </section>
     <section id="lewy">
       <h3>Stany na dzień 2022-05-05</h3>
       <table>
