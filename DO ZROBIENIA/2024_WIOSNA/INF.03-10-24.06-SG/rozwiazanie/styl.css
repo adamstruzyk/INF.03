@@ -16,6 +16,9 @@
 }
 #cytaty{
     clear: both;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-style: italic;
 }
 .karta
 {
@@ -42,11 +45,6 @@ h5{
 }
 h5:hover{
     background-color: lightseagreen;
-}
-cite{
-    text-align: center;
-    padding: 30px 0 30px 0;
-    font-style: italic;
 }
 
 #cyt1{
