@@ -1,0 +1,41 @@
+Karta 1
+Obraz: osoba1.jpg 		tekst alternatywny: Dyrektor
+Dane:
+Krzysztof Dobromilski
+Dyrektor
+Firma logistyczna była jego marzeniem. Zrealizował je 10 lat temu. Nasza firma prosperuje dzięki Krzysztofowi
+telefon: 111222333
+Krzysztof.Dobromilski@firma.pl
+
+	
+Karta 2
+Obraz: osoba2.jpg 		tekst alternatywny: Kierownik logistyków
+Joanna Trojanowska
+Kierownik logistyków
+Od początku firmy z nami. Wie jak zorganizować pracę swoich logistyków aby wszystko było na czas
+telefon: 222333444
+Joanna.Trojanowska@firma.pl
+    
+	
+	
+Karta 3
+Obraz: osoba3.jpg 		tekst alternatywny: Kadry
+Ewa Nowak
+Księgowość i kadry
+Od lat finanse powierzamy niezawodnej Ewie. Twardą ręką trzyma kasę i dba o wszystkich pracowników
+telefon: 333444555
+Ewa.Nowak@firma.pl
+    
+		
+Cytaty
+1:
+"Każdego dnia stawiam sobie nieosiągalne wyzwania i próbuję je wykonać"
+- Krzysztof
+
+2:
+"Nie bój się porażek, im więcej ich rozwiążesz, tym szybciej osiągniesz cel"
+- Joanna
+
+3:
+"Niezadowolony pracownik jest dla mnie źródłem nauki"
+- Ewa
