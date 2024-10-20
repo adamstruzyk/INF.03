@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `nazwa` FROM `marki`;
+Zapytanie 2: SELECT `model`,`rocznik`,`przebieg`,`paliwo`,`cena`,`zdjecie` FROM `samochody` WHERE `id` = 10;
+Zapytanie 3: SELECT marki.nazwa, samochody.model, samochody.rocznik, samochody.cena, samochody.zdjecie FROM `samochody` JOIN marki ON marki.id = samochody.marki_id WHERE samochody.wyrozniony = 1 LIMIT 4;
+Zapytanie 4: SELECT samochody.model, samochody.cena, samochody.zdjecie FROM `samochody` JOIN marki ON marki.id = samochody.marki_id WHERE marki.nazwa = 'Audi';
