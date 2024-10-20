@@ -8,7 +8,7 @@
   </head>
   <body>
     <header id="baner">
-      <h1><i>KupAuto!</i> Internetowy Komis Samochodowy</h1>
+      <h1><em>KupAuto!</em> Internetowy Komis Samochodowy</h1>
     </header>
     <section id="glowny1">
     <?php
