@@ -20,7 +20,9 @@
     float: left;
     height: 100%;
 }
-
+#glowny3{
+    clear: both;
+}
 .blok_generowany{
     background-color: snow;
     height: 450px;
@@ -28,11 +30,13 @@
     margin: 1%;
     text-align: center;
     border: 1px solid crimson;
+    float: left;
 }
 
 #stopka{
     background-color: crimson;
     color: white;
+    clear: both;
 }
 img{
     max-width: 100%;

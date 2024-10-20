@@ -11,11 +11,49 @@
       <h1><i>KupAuto!</i> Internetowy Komis Samochodowy</h1>
     </header>
     <section id="glowny1">
-      <!--skrypt 1-->
+    <?php
+      $conn = mysqli_connect('localhost','root','','kupauto');
+      if(!$conn){
+        exit();
+      }
+      else{
+        $zapytanie2 = "SELECT `model`,`rocznik`,`przebieg`,`paliwo`,`cena`,`zdjecie` FROM `samochody` WHERE `id` = 10;";
+        $wynik = mysqli_query($conn,$zapytanie2);
+        $text = "";
+        while($tab = mysqli_fetch_array($wynik)){
+          $text .= "<img src='$tab[5]' alt='oferta dnia'>";
+          $text .= "<h4>Oferta dnia: Toyota $tab[0]</h4>";
+          $text .= "<p>Rocznik: $tab[1], przebieg: $tab[2], rodzaj paliwa: $tab[3]</p>";
+          $text .= "<h4>Cena: $tab[4] </h4>";
+        }
+        echo $text;
+      }
+      mysqli_close($conn);
+    ?>
     </section>
     <section id="glowny2">
       <h2>Oferty wyróżnione</h2>
-      <!--skrypt 2-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','kupauto');
+        if(!$conn){
+          exit();
+        }
+        else{
+          $zapytanie3 = "SELECT marki.nazwa, samochody.model, samochody.rocznik, samochody.cena, samochody.zdjecie FROM `samochody` JOIN marki ON marki.id = samochody.marki_id WHERE samochody.wyrozniony = 1 LIMIT 4;";
+          $wynik = mysqli_query($conn,$zapytanie3);
+          $text = "";
+          while($tab = mysqli_fetch_array($wynik)){
+            $text .= "<section class='blok_generowany'>";
+            $text .= "<img src='$tab[4]' alt='$tab[1]'>";
+            $text .= "<h4>$tab[0] $tab[1]</h4>";
+            $text .= "<p>Rocznik: $tab[2]</p>";
+            $text .= "<h4>Cena: $tab[3]</h4>";
+            $text .= "</section>";
+          }
+          echo $text;
+        }
+        mysqli_close($conn);
+      ?>
     </section>
     <section id="glowny3">
       <h2>Wybierz markę</h2>
@@ -35,3 +73,25 @@
     </footer>
   </body>
 </html>
+
+<?php
+  $conn = mysqli_connect('localhost','root','','kupauto');
+  if(!$conn){
+    exit();
+  }
+  else{
+    $zapytanie1 = "SELECT `nazwa` FROM `marki`;";
+    $wynik = mysqli_query($conn,$zapytanie1);
+    $text = "";
+    while($tab = mysqli_fetch_array($wynik)){
+      $text .= "<section class='blok_generowany'>";
+      $text .= "<img src='$tab[4]' alt='$tab[1]'>";
+      $text .= "<h4>$tab[0] $tab[1]</h4>";
+      $text .= "<p>Rocznik: $tab[2]</p>";
+      $text .= "<h4>Cena: $tab[3]</h4>";
+      $text .= "</section>";
+    }
+    echo $text;
+  }
+  mysqli_close($conn);
+?>
