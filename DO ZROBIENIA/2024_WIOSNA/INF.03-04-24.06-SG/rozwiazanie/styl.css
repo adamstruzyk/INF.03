@@ -1,0 +1,48 @@
+*{
+    font-family: helvetica;
+}
+
+#baner,#stopka{
+    background-color: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#stopka{
+    clear: both;
+}
+#lewy,#prawy{
+    background-color: navajowhite;
+    width: 15%;
+    height: 700px;
+}
+#srodkowy{
+    width: 70%;
+    height: 700px;
+    overflow: visible;
+}
+#lewy,#prawy,#srodkowy{
+    float: left;
+}
+.blok_generowany{
+    float: left;
+    width: 46%;
+    margin: 2%;
+    position: relative;
+}
+h3,p,a{
+    position: absolute;
+    opacity: 0;
+}
+h3{
+    top: 5%;
+}
+p{
+    top: 30%;
+}
+a{
+    top:70%;
+    left: 70%;
+    background-color: sienna;
+    padding: 15px;
+}
