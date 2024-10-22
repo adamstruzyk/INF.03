@@ -19,7 +19,7 @@
 #srodkowy{
     width: 70%;
     height: 700px;
-    overflow: visible;
+    overflow: scroll;
 }
 
 img{
