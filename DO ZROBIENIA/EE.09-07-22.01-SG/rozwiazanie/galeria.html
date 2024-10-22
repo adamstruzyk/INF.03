@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria</title>
     <link rel="stylesheet" href="styl7.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
       <h2>Galeria miejsc ciekawych</h2>
     </header>
     <section id="glowny">
-      <img src="lanzarotte.jpg" alt="galeria" />
+      <img src="lanzarotte.jpg" alt="galeria" id="aktywne" />
     </section>
     <section id="lewy">
       <h3>Przeglądaj zdjęcia</h3>
-      <img src="lanzarotte.jpg" alt="lanzarotte" />
-      <img src="pekin.jpg" alt="pekin" />
-      <img src="serengeti.jpg" alt="serengeti" />
-      <img src="wenecja.jpg" alt="wenecja" />
-      <img src="tajlandia.jpg" alt="tajlandia" />
+      <img src="lanzarotte.jpg" alt="lanzarotte" onclick="zmiana_zdjecia(1)" />
+      <img src="pekin.jpg" alt="pekin" onclick="zmiana_zdjecia(2)" />
+      <img src="serengeti.jpg" alt="serengeti" onclick="zmiana_zdjecia(3)" />
+      <img src="wenecja.jpg" alt="wenecja" onclick="zmiana_zdjecia(4)" />
+      <img src="tajlandia.jpg" alt="tajlandia" onclick="zmiana_zdjecia(5)" />
     </section>
     <section id="prawy">
       <h3>Obrazy w naszej galerii</h3>
@@ -35,7 +36,7 @@
           <td>1</td>
         </tr>
       </table>
-      <p>Polub nas <img src="icon-off.png" /></p>
+      <p>Polub nas <img src="icon-off.png" id="serce" /></p>
       <a href="https://pixabay.com" target="_blank">Odkryj wiecej zdjęć</a>
     </section>
     <footer>Autor: Adam Strużyk 5TI</footer>
