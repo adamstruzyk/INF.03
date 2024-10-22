@@ -21,12 +21,14 @@ footer{
     height: 300px;
     width: 80%;
     float: left;
+    color: white;
 }
 #prawy{
     background-color: rgb(70,130,180);
     height: 300px;
     width: 20%;
     float: left;
+    color: white;
 }
 #glowny img{
     padding: 3px;

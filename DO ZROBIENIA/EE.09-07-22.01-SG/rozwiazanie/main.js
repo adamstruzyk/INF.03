@@ -1,3 +1,4 @@
+let licznik = 0;
 function zmiana_zdjecia(arg) {
     switch (arg) {
         //zmiany zdjec w bloku glownym
@@ -18,13 +19,14 @@ function zmiana_zdjecia(arg) {
             break;
         //zmiana ikony serduszka
         case 6:
-            let aktualna_ikona = document.getElementById("serce").src;
-            if (aktualna_ikona == "icon-off.png") {
-                aktualna_ikona = "icon-on.png"
+            
+            if (licznik % 2 == 0) {
+                document.getElementById("serce").src = "icon-on.png"
             }
             else {
-                aktualna_ikona = "icon-off.png"
+                document.getElementById("serce").src = "icon-off.png"
             }
+            licznik++;
             break;
     }
 }
