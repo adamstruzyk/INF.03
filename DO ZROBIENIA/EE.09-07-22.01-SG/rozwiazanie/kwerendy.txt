@@ -1,4 +1,4 @@
-Zapytanie 1:
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 1: SELECT `kierunek`,`czas` FROM `przyloty` WHERE `status_lotu` LIKE "";
+Zapytanie 2: SELECT odloty.kierunek, odloty.dzien FROM `odloty` JOIN samoloty ON samoloty_id = odloty.samoloty_id WHERE samoloty.typ LIKE "Boening 787";
+Zapytanie 3: SELECT `nr_rejsu`,`kierunek` FROM `przyloty` WHERE `nr_rejsu` LIKE "%LX%";
+Zapytanie 4: UPDATE `samoloty` SET `linie`='SWISS2' WHERE `linie` LIKE "SWISS";
