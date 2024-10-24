@@ -1,0 +1,49 @@
+body{
+    font-family: Garamond;
+    font-size: 110%;
+}
+header{
+    background-color: #965873;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+#lewy{
+    float: left;
+    background-color: #965873;
+    color: white;
+    width: 30%;
+    height: 750px;
+}
+#prawy1{
+    float: right;
+    background-color: #AAC28A;
+    width: 70%;
+    height: 250px;
+    text-align: right;
+}
+#prawy1{
+    float: right;
+    background-color: #86A25F;
+    width: 70%;
+    height: 500px;
+    text-align: center;
+}
+footer{
+    clear: both;
+    background-color: #965873;
+    color: white;
+}
+a{
+    color: white;
+}
+#prawy1>img{
+    width: 18%;
+    margin: 10px;
+}
+#prawy2>img{
+    border: 6px dotted #965873;
+}
+#prawy2>img:hover{
+    border: 6px dotted green;
+}
