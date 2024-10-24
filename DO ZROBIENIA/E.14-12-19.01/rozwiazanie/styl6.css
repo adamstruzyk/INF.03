@@ -22,7 +22,7 @@ header{
     height: 250px;
     text-align: right;
 }
-#prawy1{
+#prawy2{
     float: right;
     background-color: #86A25F;
     width: 70%;
@@ -37,13 +37,13 @@ footer{
 a{
     color: white;
 }
-#prawy1>img{
+#prawy1 img{
     width: 18%;
     margin: 10px;
 }
-#prawy2>img{
+#prawy2 img{
     border: 6px dotted #965873;
 }
-#prawy2>img:hover{
+#prawy2 img:hover{
     border: 6px dotted green;
 }
