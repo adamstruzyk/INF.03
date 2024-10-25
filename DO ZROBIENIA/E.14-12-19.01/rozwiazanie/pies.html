@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasze zdjęcia</title>
     <link rel="stylesheet" href="styl6.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -12,9 +13,30 @@
     </header>
     <section id="prawy1">
       <h2>Kliknij na zdjęcie</h2>
-      <img src="pies1.jpg" onclick="" onmouseover="" onmouseout="" alt="psy" />
-      <img src="pies2.jpg" onclick="" onmouseover="" onmouseout="" alt="psy" />
-      <img src="pies3.jpg" onclick="" onmouseover="" onmouseout="" alt="psy" />
+      <img
+        src="pies1.jpg"
+        onclick="klikniecie(1)"
+        onmouseover="najechanie(1)"
+        onmouseout="opuszczenie(1)"
+        alt="psy"
+        id="1"
+      />
+      <img
+        src="pies2.jpg"
+        onclick="klikniecie(2)"
+        onmouseover="najechanie(2)"
+        onmouseout="opuszczenie(2)"
+        alt="psy"
+        id="2"
+      />
+      <img
+        src="pies3.jpg"
+        onclick="klikniecie(3)"
+        onmouseover="najechanie(3)"
+        onmouseout="opuszczenie(3)"
+        alt="psy"
+        id="3"
+      />
     </section>
     <section id="lewy">
       <h1>Wybierz</h1>
@@ -28,7 +50,7 @@
       <h5><a href="index.html">Do strony głównej</a></h5>
     </section>
     <section id="prawy2">
-      <p><img src="pies2.jpg" alt="Wybrany pies" /></p>
+      <p><img src="pies2.jpg" alt="Wybrany pies" id="aktywne" /></p>
     </section>
     <footer>Galerię zdjęć opracował: Adam Strużyk 5TI</footer>
   </body>
