@@ -1,0 +1,42 @@
+*{
+    font-family: tahoma;
+}
+#baner1,#baner2,#baner3{
+    float: left;
+    background-color: #7DA453;
+    color: white;
+    height: 120px;
+}
+#baner1,#baner2{
+    width: 40%;
+}
+#baner3{
+    width: 20%;
+}
+#glowny{
+    clear: both;
+}
+.kalendarz{
+    background-color: #AED581;
+    width: 200px;
+    height: 100px;
+    margin: 7px;
+    border: 1px solid #7DA453;
+    float: left;
+}
+.kalendarz:hover{
+    background-color: #7DA453;  
+    color: white;
+}
+#stopka{
+    clear: both;
+    background-color: #7DA453;
+    color: white;
+    padding: 5px;
+}
+h5{
+    text-align: center;
+}
+form{
+    padding-top: 50px;
+}
