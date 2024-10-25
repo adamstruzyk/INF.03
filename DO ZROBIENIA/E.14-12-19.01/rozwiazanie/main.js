@@ -12,6 +12,10 @@ function klikniecie(arg) {
             document.getElementById('3').src = "pies3.jpg";
             document.getElementById('aktywne').src = "pies3.jpg";
             break;
+        case 4:
+            document.getElementById('4').src = "kot1.jpg";
+            document.getElementById('aktywne').src = "kot1.jpg";
+            break;
     }
 }
 
@@ -26,6 +30,9 @@ function najechanie(arg) {
         case 3:
             document.getElementById('3').src = "pies3-odbicie.jpg";
             break;
+        case 4:
+            document.getElementById('4').src = "kot1-odbicie.jpg";
+            break;
     }
 }
 
@@ -39,6 +46,9 @@ function opuszczenie(arg) {
             break;
         case 3:
             document.getElementById('3').src = "pies3.jpg";
+            break;
+        case 4:
+            document.getElementById('4').src = "kot1.jpg";
             break;
     }
 }
