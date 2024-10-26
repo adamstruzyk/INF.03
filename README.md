@@ -1,5 +1,5 @@
 # 💻 Rozwiązania do egzaminu zawodowego INF.03 
-
+ 
 Znajdziesz tutaj **rozwiązania** do każdego arkusza praktycznego z INF.03,  
 a także **materiały**, jeśli najpierw chciałbyś/chciałabyś rozwiązać arkusz samodzielnie.
 
