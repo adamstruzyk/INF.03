@@ -1,4 +1,4 @@
-Zapytanie 1:
+Zapytanie 1: SELECT `nazwa` FROM `towary` WHERE `promocja` = 1;
 Zapytanie 2:
 Zapytanie 3:
 Zapytanie 4:
