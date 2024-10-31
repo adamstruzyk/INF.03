@@ -45,8 +45,24 @@
         liczba sztuk: <input type="number" name="sztuki" /><br>
         <button type=submit>OBLICZ</button>
       </form>
-
-      <!--skrypt2-->
+      <?php
+        $conn = mysqli_connect('localhost', 'root', '', 'sklep');
+        if(!$conn){
+          exit();
+        }
+        else{
+          @$towar = $_POST['artykuly'];
+          @$liczba = $_POST['sztuki'];
+          if(isset($towar) && isset($liczba)){
+            $zapytanie2 = "SELECT `cena` FROM `towary` WHERE `nazwa` LIKE '$towar';";
+            $wynik = mysqli_query($conn, $zapytanie2);
+            $tab = mysqli_fetch_array($wynik);
+            $koszt = $tab['cena']*$liczba;
+            echo "wartość zakupów: $koszt";
+          }
+        }
+        mysqli_close($conn);
+      ?>
     </section>
     <section id="prawy">
       <h2>Kontakt</h2>
@@ -59,35 +75,4 @@
   </body>
 </html>
 
-<?php
-  $conn = mysqli_connect('localhost', 'root', '', 'sklep');
-  if(!$conn){
-    exit();
-  }
-  else{
-    $zapytanie1 = "SELECT `nazwa`,`cena` FROM `towary` LIMIT 4;";
-    $wynik = mysqli_query($conn, $zapytanie1);
-    while($tab = mysqli_fetch_array($wynik)){
-      echo "<tr>";
-      echo "<td>$tab[0]</td><td>$tab[1]</td>";
-      echo "</tr>";
-    }
-  }
-  mysqli_close($conn);
-?>
-<?php
-  $conn = mysqli_connect('localhost', 'root', '', 'sklep');
-  if(!$conn){
-    exit();
-  }
-  else{
-    $zapytanie1 = "SELECT `nazwa`,`cena` FROM `towary` LIMIT 4;";
-    $wynik = mysqli_query($conn, $zapytanie1);
-    while($tab = mysqli_fetch_array($wynik)){
-      echo "<tr>";
-      echo "<td>$tab[0]</td><td>$tab[1]</td>";
-      echo "</tr>";
-    }
-  }
-  mysqli_close($conn);
-?>
+
