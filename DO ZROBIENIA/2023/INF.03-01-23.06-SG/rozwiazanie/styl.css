@@ -1,0 +1,42 @@
+*{
+    font-family: garamond;
+    text-align: center;
+}
+#baner,#stopka{
+    background-color: #8C7B75;
+    color: white;
+    height: 70px;
+    font-size: 150%;
+}
+#stopka{
+    clear: both;
+}
+#lewy,#prawy{
+    background-color: #BCAAA4;
+    height: 400px;
+    width: 35%;
+}
+#srodkowy{
+    background-color: #EFDCD5;
+    height: 400px;
+    width: 30%;
+}
+#lewy,#srodkowy,#prawy{
+    float: left;
+}
+ol{
+    list-style-type:lower-latin;
+}
+li{
+    text-align: left;
+}
+img{
+    border: 1px dashed #8C7B75;
+    padding: 5px;
+    border-radius: 10%;
+}
+#skrypt2{
+    margin-top: 100px;
+    border: 1px solid #8C7B75;
+}
+
