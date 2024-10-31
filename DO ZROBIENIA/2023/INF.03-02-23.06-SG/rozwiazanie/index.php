@@ -13,7 +13,22 @@
     <section id="lewy">
       <h2>Nasze ceny</h2>
       <table>
-        <!--skrypt1-->
+        <?php
+          $conn = mysqli_connect('localhost', 'root', '', 'sklep');
+          if(!$conn){
+            exit();
+          }
+          else{
+            $zapytanie1 = "SELECT `nazwa`,`cena` FROM `towary` LIMIT 4;";
+            $wynik = mysqli_query($conn, $zapytanie1);
+            while($tab = mysqli_fetch_array($wynik)){
+              echo "<tr>";
+              echo "<td>$tab[0]</td><td>$tab[1]</td>";
+              echo "</tr>";
+            }
+          }
+          mysqli_close($conn);
+        ?>
       </table>
     </section>
     <section id="srodkowy">
@@ -43,3 +58,36 @@
     </footer>
   </body>
 </html>
+
+<?php
+  $conn = mysqli_connect('localhost', 'root', '', 'sklep');
+  if(!$conn){
+    exit();
+  }
+  else{
+    $zapytanie1 = "SELECT `nazwa`,`cena` FROM `towary` LIMIT 4;";
+    $wynik = mysqli_query($conn, $zapytanie1);
+    while($tab = mysqli_fetch_array($wynik)){
+      echo "<tr>";
+      echo "<td>$tab[0]</td><td>$tab[1]</td>";
+      echo "</tr>";
+    }
+  }
+  mysqli_close($conn);
+?>
+<?php
+  $conn = mysqli_connect('localhost', 'root', '', 'sklep');
+  if(!$conn){
+    exit();
+  }
+  else{
+    $zapytanie1 = "SELECT `nazwa`,`cena` FROM `towary` LIMIT 4;";
+    $wynik = mysqli_query($conn, $zapytanie1);
+    while($tab = mysqli_fetch_array($wynik)){
+      echo "<tr>";
+      echo "<td>$tab[0]</td><td>$tab[1]</td>";
+      echo "</tr>";
+    }
+  }
+  mysqli_close($conn);
+?>
