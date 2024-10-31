@@ -27,8 +27,8 @@
           <option value="Linijka 30 cm">Linijka 30 cm</option>
         </select>
         <br />
-        liczba sztuk: <input type="number" name="sztuki" /> <br />
-        <input type="submit" value="OBLICZ" /> <br />
+        liczba sztuk: <input type="number" name="sztuki" /><br>
+        <button type=submit>OBLICZ</button>
       </form>
 
       <!--skrypt2-->
