@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko`,`stanowisko` FROM `kadra` WHERE `stanowisko` LIKE "fryzjer" OR `stanowisko` LIKE "stylista";
+Zapytanie 2: SELECT COUNT(`rodzaj`), MAX(`cena`) FROM `uslugi` WHERE `rodzaj` = 2;
+Zapytanie 3: SELECT uslugi.rodzaj, kadra.imie FROM `kadra` JOIN uslugi ON kadra.id = uslugi.kadra_id WHERE uslugi.rodzaj = 2 OR uslugi.rodzaj = 3;
+Zapytanie 4: ALTER TABLE uslugi ADD opinia text;
