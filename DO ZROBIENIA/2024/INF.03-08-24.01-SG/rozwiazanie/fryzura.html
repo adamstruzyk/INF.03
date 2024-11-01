@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styl8.css" />
     <title>Fryzjerstwo</title>
+    <script src="main.js"></script>
   </head>
   <body>
     <section id="lewy1">
@@ -39,11 +40,12 @@
 
     <section id="lewy2">
       <h2>PROMOCJA!</h2>
-      <input type="radio" name="wlosy" value="1" /> Krótkie <br />
-      <input type="radio" name="wlosy" value="2" /> Średnie <br />
-      <input type="radio" name="wlosy" value="3" /> Półdługie <br />
-      <input type="radio" name="wlosy" value="4" /> Długie <br />
+      <input type="radio" name="wlosy" id="1" value="25" />Krótkie <br />
+      <input type="radio" name="wlosy" id="2" value="30" />Średnie <br />
+      <input type="radio" name="wlosy" id="3" value="40" />Półdługie <br />
+      <input type="radio" name="wlosy" id="4" value="50" />Długie <br />
       <button onclick="promocja()">Odkryj promocję</button>
+      <p id="wynik"></p>
     </section>
 
     <section id="prawy2">
