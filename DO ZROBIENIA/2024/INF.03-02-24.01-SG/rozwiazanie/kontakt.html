@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section id="container">
+      <header id="baner">
+        <img src="animacja.gif" alt="Pogotowie komputerowe" />
+      </header>
+      <section id="menu">
+        <a href="index.html">Strona Główna</a>
+        <a href="kontakt.html">Kontakt</a>
+      </section>
+      <section id="glowny1"></section>
+      <section id="glowny2">
+        <h2>Kontakt</h2>
+        <form>
+          <table>
+            <tr>
+              <td>Imię:</td>
+              <td><input type="text" id="imie" /></td>
+            </tr>
+            <tr>
+              <td>Nazwisko:</td>
+              <td><input type="text" id="nazwisko" /></td>
+            </tr>
+            <tr>
+              <td>E-mail:</td>
+              <td><input type="email" /></td>
+            </tr>
+            <tr>
+              <td>Zgłoszenie:</td>
+              <td>
+                <select id="uslugi">
+                  <option value="1">naprawa komputerów</option>
+                  <option value="2">odzyskiwanie danych</option>
+                  <option value="3">wirusy</option>
+                  <option value="4">konfiguracja LAN</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="checkbox" id="kopia_wiadomosci" checked />Wyślij
+                kopię wiadomości
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="reset" value="Czyść" />
+                <input type="submit" value="Wyślij" onclick="komunikat()" />
+              </td>
+            </tr>
+          </table>
+        </form>
+        <hr />
+      </section>
+      <section id="glowny3"></section>
+      <footer id="stopka">Autor: <em>Adam Strużyk 5TI</em></footer>
+    </section>
+  </body>
+</html>
