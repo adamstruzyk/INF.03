@@ -6,6 +6,7 @@
     <title>Komputery</title>
     <link rel="stylesheet" href="styl.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script src="main.js"></script>
   </head>
   <body>
     <section id="container">
@@ -31,16 +32,18 @@
             </tr>
             <tr>
               <td>E-mail:</td>
-              <td><input type="email" /></td>
+              <td><input type="email" id="email" /></td>
             </tr>
             <tr>
               <td>Zgłoszenie:</td>
               <td>
                 <select id="uslugi">
-                  <option value="1">naprawa komputerów</option>
-                  <option value="2">odzyskiwanie danych</option>
-                  <option value="3">wirusy</option>
-                  <option value="4">konfiguracja LAN</option>
+                  <option value="naprawa komputerów">naprawa komputerów</option>
+                  <option value="odzyskiwanie danych">
+                    odzyskiwanie danych
+                  </option>
+                  <option value="wirusy">wirusy</option>
+                  <option value="konfiguracja LAN">konfiguracja LAN</option>
                 </select>
               </td>
             </tr>
@@ -55,12 +58,13 @@
               <td></td>
               <td>
                 <button type="reset">Czyść</button>
-                <button type="submit" onclick="komunikat()">Wyślij</button>
+                <button type="button" onclick="komunikat()">Wyślij</button>
               </td>
             </tr>
           </table>
         </form>
         <hr />
+        <p id="wynik"></p>
       </section>
       <section id="glowny3"></section>
       <footer id="stopka">Autor: <em>Adam Strużyk 5TI</em></footer>

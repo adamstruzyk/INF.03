@@ -23,12 +23,14 @@ body{
 #glowny1, #glowny2, #glowny3{
     height: 350px;
     width: 33%;
+    float: left;
 }
 #stopka{
     background-color: #006064;
     color: white;
     text-align: right;
     padding: 10px;
+    clear: both;
 }
 ul{
     text-align: left;
