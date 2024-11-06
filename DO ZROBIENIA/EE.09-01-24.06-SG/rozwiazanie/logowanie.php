@@ -10,6 +10,9 @@
     <header id="baner">
       <h1>Forum wielbicieli psów</h1>
     </header>
+    <section id="lewy">
+      <img src="obraz.jpg" alt="foksterier" />
+    </section>
     <section id="prawy1">
       <h2>Zapisz się</h2>
       <form method="post">
@@ -20,15 +23,12 @@
       </form>
       <!--efekt dzialania skryptu-->
     </section>
-    <section id="lewy">
-      <img src="obraz.jpg" alt="foksterier" />
-    </section>
     <section id="prawy2">
       <h2>Zapraszamy wszystkich</h2>
       <ol>
         <li>właścicieli psów</li>
         <li>weterynarzy</li>
-        <li>tych, co chcą kupić psa/li></li>
+        <li>tych, co chcą kupić psa</li>
         <li>tych, co lubią psy</li>
       </ol>
       <a href="regulamin.html">Przeczytaj regulamin forum</a>
