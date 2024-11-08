@@ -25,34 +25,39 @@
           <th>numer rejsu</th>
           <th>status</th>
         </tr>
-        <!--skrypt 1-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','egzamin');
+          if(!$conn){
+            exit();
+          }
+          else{
+            $zapytanie = "SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC;";
+            $wynik = mysqli_query($conn, $zapytanie);
+            $text = '';
+            while($tab = mysqli_fetch_array($wynik)){
+              $text .= "<tr>";
+              $text .= "<td>$tab[0]</td>";
+              $text .= "<td>$tab[1]</td>";
+              $text .= "<td>$tab[2]</td>";
+              $text .= "<td>$tab[3]</td>";
+              $text .= "</tr>";
+            }
+            echo $text;
+          }
+          mysqli_close($conn);
+        ?>
       </table>
     </section>
     <footer id="stopka1">
-      tutaj bedzie skrypt2
-      <!--skrypt 2-->
+      <?php
+        if(isset($_COOKIE['ciasteczko'])) {
+          echo "<p><i>Witaj ponownie na stronie lotniska</i></p>";
+        } else {
+          setcookie("ciasteczko", 1, TIME() + 7200);
+          echo "<p><b>Dzień dobry! Strona lotniska używa ciasteczek</b></p>";
+        }
+      ?>
     </footer>
     <footer id="stopka2">Autor: Adam Strużyk 5TI</footer>
   </body>
 </html>
-<?php
-  $conn = mysqli_connect('localhost','root','','egzamin');
-  if(!$conn){
-    exit();
-  }
-  else{
-    $zapytanie = "SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC;";
-    $wynik = mysqli_query($conn, $zapytanie);
-    $text = '';
-    while($tab = mysqli_fetch_array($wynik)){
-      $text .= "<tr>";
-      $text .= "<td>$tab[0]</td>";
-      $text .= "<td>$tab[1]</td>";
-      $text .= "<td>$tab[2]</td>";
-      $text .= "<td>$tab[3]</td>";
-      $text .= "</tr>";
-    }
-    echo $text;
-  }
-  mysqli_close($conn);
-?>
