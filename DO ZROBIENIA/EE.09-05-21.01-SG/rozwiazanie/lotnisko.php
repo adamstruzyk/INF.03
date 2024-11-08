@@ -36,6 +36,23 @@
   </body>
 </html>
 <?php
-
-
+  $conn = mysqli_connect('localhost','root','','egzamin');
+  if(!$conn){
+    exit();
+  }
+  else{
+    $zapytanie = "SELECT `czas`,`kierunek`,`nr_rejsu`,`status_lotu` FROM `przyloty` ORDER BY `czas` ASC;";
+    $wynik = mysqli_query($conn, $zapytanie);
+    $text = '';
+    while($tab = mysqli_fetch_array($wynik)){
+      $text .= "<tr>";
+      $text .= "<td>$tab[0]</td>";
+      $text .= "<td>$tab[1]</td>";
+      $text .= "<td>$tab[2]</td>";
+      $text .= "<td>$tab[3]</td>";
+      $text .= "</tr>";
+    }
+    echo $text;
+  }
+  mysqli_close($conn);
 ?>
