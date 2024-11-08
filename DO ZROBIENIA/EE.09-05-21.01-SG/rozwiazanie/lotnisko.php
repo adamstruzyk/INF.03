@@ -35,3 +35,7 @@
     <footer id="stopka2">Autor: Adam Strużyk 5TI</footer>
   </body>
 </html>
+<?php
+
+
+?>
