@@ -1,0 +1,40 @@
+*{
+    font-family: Helvetica;
+}
+#gorny1, #gorny2{
+    background-color: rgb(146, 184,112);
+    text-align: center;
+    width: 50%;
+    height: 170px;
+    float: left;
+}
+#baner,#stopka{
+    clear: both;
+    background-color: rgb(100,61,49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+#lewy,#prawy{
+    float: left;
+    background-color: rgb(146,184,112);
+    width: 50%;
+    height: 450px;
+}
+#gorny1 a{
+    background: url(cukierki1.jpg);
+    padding-right: 30px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+table, td{
+    border: 2px dashed green;
+    margin: 30px;
+    padding: 20px;
+}
+h1{
+    letter-spacing: 20px;
+    font-size: 250%;
+}
