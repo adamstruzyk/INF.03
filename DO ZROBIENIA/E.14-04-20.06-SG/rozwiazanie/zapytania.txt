@@ -1,0 +1,15 @@
+Zapytanie 1:
+CREATE TABLE zamowienia(
+    id INT UNSIGNED NOT NULL,
+    imie text null,
+    nazwisko text null,
+    adres_email text null,
+	liczba_choinek int null,
+	liczba_mikolajow int null,
+    liczba_reniferow int null,
+    info boolean null
+);
+Zapytanie 2: ALTER TABLE zamowienia ADD PRIMARY KEY (`id`);
+Zapytanie 3:
+Zapytanie 4:
+Zapytanie 5:
