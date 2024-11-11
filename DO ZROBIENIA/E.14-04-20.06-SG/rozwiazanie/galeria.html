@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sklep</title>
     <link rel="stylesheet" href="styl.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header id="baner">
@@ -16,11 +17,11 @@
       <a href="zamowienie.php">Zamówienie</a>
     </section>
     <section id="srodkowy">
-      <img src="choinka.jpg" alt="ozdoby choinkowe" />
-      <img src="mikolaj.jpg" alt="ozdoby choinkowe" />
-      <img src="renifer.jpg" alt="ozdoby choinkowe" />
+      <img src="choinka.jpg" onclick="zdjecie(1)" alt="ozdoby choinkowe" />
+      <img src="mikolaj.jpg" onclick="zdjecie(2)" alt="ozdoby choinkowe" />
+      <img src="renifer.jpg" onclick="zdjecie(3)" alt="ozdoby choinkowe" />
       <p>Wybierz ozdobę w kółku</p>
-      <!--skrypt 1-->
+      <p id="wynik"></p>
     </section>
     <section id="prawy">
       <img src="animacja.gif" />
