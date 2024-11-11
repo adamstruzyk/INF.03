@@ -1,0 +1,15 @@
+Zapytanie 1:
+CREATE TABLE zamowienia(
+    id INT UNSIGNED NOT NULL,
+    imie text null,
+    nazwisko text null,
+    adres_email text null,
+	liczba_choinek int null,
+	liczba_mikolajow int null,
+    liczba_reniferow int null,
+    info boolean null
+);
+Zapytanie 2: ALTER TABLE zamowienia ADD PRIMARY KEY (`id`);
+Zapytanie 3: CREATE USER `klient`@`localhost` IDENTIFIED BY "klient123";
+Zapytanie 4: GRANT INSERT ON `zamowienia` TO `klient`;
+Zapytanie 5: INSERT INTO `zamowienia`(`imie`, `nazwisko`, `adres_email`) VALUES ('Jan','Kowalski','jKowalski@poczta.pl');
