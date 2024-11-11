@@ -10,6 +10,6 @@ CREATE TABLE zamowienia(
     info boolean null
 );
 Zapytanie 2: ALTER TABLE zamowienia ADD PRIMARY KEY (`id`);
-Zapytanie 3:
-Zapytanie 4:
-Zapytanie 5:
+Zapytanie 3: CREATE USER `klient`@`localhost` IDENTIFIED BY "klient123";
+Zapytanie 4: GRANT INSERT ON `zamowienia` TO `klient`;
+Zapytanie 5: INSERT INTO `zamowienia`(`imie`, `nazwisko`, `adres_email`) VALUES ('Jan','Kowalski','jKowalski@poczta.pl');
