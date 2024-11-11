@@ -15,7 +15,15 @@
       <a href="galeria.html">Galeria</a>
       <a href="zamowienie.php">Zamówienie</a>
     </section>
-    <section id="srodkowy"></section>
+    <section id="srodkowy">
+        <p>Dodaj użytkownika</p>
+        <form method="post">
+            Imię: <input type="text" name="imie"><br>
+            Nazwisko: <input type="text" name="nazwisko"><br>
+            e-mail: <input type="email" name="email"><br>
+            <input type="submit" value="WYŚLIJ">
+        </form>
+    </section>
     <section id="prawy">
       <img src="animacja.gif" />
     </section>
