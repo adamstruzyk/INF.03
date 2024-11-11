@@ -23,6 +23,22 @@
             e-mail: <input type="email" name="email"><br>
             <button type="submit">WYŚLIJ</button>
         </form>
+        <?php
+            $conn = mysqli_connect('localhost','root','','sklep');
+            if(!$conn){
+                exit();
+            }
+            else{
+                @$imie = $_POST['imie'];
+                @$nazwisko = $_POST['nazwisko'];
+                @$email = $_POST['email'];
+                if(isset($imie) && isset($nazwisko) && isset($email)){
+                    $zapytanie = "INSERT INTO `zamowienia`(`imie`, `nazwisko`, `adres_email`) VALUES ('$imie','$nazwisko','$email');";
+                    mysqli_query($conn, $zapytanie);
+                }
+            }
+            mysqli_close($conn);
+        ?>
     </section>
     <section id="prawy">
       <img src="animacja.gif" />
