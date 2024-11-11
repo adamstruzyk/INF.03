@@ -21,7 +21,7 @@
             Imię: <input type="text" name="imie"><br>
             Nazwisko: <input type="text" name="nazwisko"><br>
             e-mail: <input type="email" name="email"><br>
-            <input type="submit" value="WYŚLIJ">
+            <button type="submit">WYŚLIJ</button>
         </form>
     </section>
     <section id="prawy">
