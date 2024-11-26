@@ -46,11 +46,43 @@
       <a href="cv.txt" download>Pobierz</a>
       <h1>Liczba zatrudnionych pracowników</h1>
       <p>
-        <!--skrypt 2-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','firma');
+          if(!$conn){
+            exit();
+          }
+          else{
+            $zapytanie2 = "SELECT COUNT(*) FROM `pracownicy`;";
+            $wynik = mysqli_query($conn, $zapytanie2);
+            $row = mysqli_fetch_array($wynik);
+            echo $row[0];
+          }
+          mysqli_close($conn);
+        ?>
       </p>
     </section>
     <section id="prawy">
-      <!--skrypt 3-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','firma');
+        if(!$conn){
+          exit();
+        }
+        else{
+          $zapytanie3 = "SELECT `id`,`imie`,`nazwisko` FROM `pracownicy` WHERE `id` = 2;";
+          $wynik1 = mysqli_query($conn, $zapytanie3);
+          $row1 = mysqli_fetch_array($wynik1);
+          echo "<img src='$row1[0].jpg' alt='pracownik'>";
+          echo "<h2>$row1[1] $row1[2]</h2>";
+
+          $zapytanie4 = "SELECT pracownicy.id, stanowiska.nazwa, stanowiska.opis FROM `pracownicy` JOIN stanowiska ON stanowiska.id = pracownicy.stanowiska_id WHERE pracownicy.id = 2;";
+          $wynik2 = mysqli_query($conn, $zapytanie4);
+          $row2 = mysqli_fetch_array($wynik2);
+
+          echo "<h4>$row2[1]</h4>";
+          echo "<h5>$row2[2]</h5>";
+        }
+        mysqli_close($conn);
+      ?>
     </section>
     <footer id="stopka">
       Autorem aplikacji jest: Adam Strużyk 5TI
@@ -61,3 +93,5 @@
     </footer>
   </body>
 </html>
+
+
