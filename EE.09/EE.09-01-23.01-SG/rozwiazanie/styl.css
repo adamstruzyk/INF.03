@@ -1,0 +1,40 @@
+body{
+    font-family: helvetica;
+    background-color: #DDD;
+    color: #546E7A;
+}
+#lewy,#prawy{
+    float: left;
+    background-color: white;
+    height: 600px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px gray;
+}
+#lewy{
+    width: 50%;
+}
+#prawy{
+    width: 30%;
+}
+#stopka{
+    clear: both;
+    background-color: #5C6BC0;
+    color: white;
+    padding: 30px;
+}
+img{
+    width: 100%;
+}
+h1{
+    background-color: #5C6BC0;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: 300;
+}
+h3, p{
+    padding-left: 30px;
+}
+h2, h4{
+    text-align: center;
+}
