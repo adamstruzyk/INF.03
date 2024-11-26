@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko`,`adres`,`miasto`,`czyRODO`,`czyBadania` FROM `pracownicy` WHERE `id` = 2;
+Zapytanie 2: SELECT COUNT(*) FROM `pracownicy`;
+Zapytanie 3: SELECT `id`,`imie`,`nazwisko` FROM `pracownicy` WHERE `id` = 2;
+Zapytanie 4: SELECT pracownicy.id, stanowiska.nazwa, stanowiska.opis FROM `pracownicy` JOIN stanowiska ON stanowiska.id = pracownicy.stanowiska_id WHERE pracownicy.id = 2;
