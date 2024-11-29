@@ -13,7 +13,7 @@
     <section id="ciasteczka">
     <?php
       if(!isset($_COOKIE['ciastko'])){
-        setcookie("ciastko",1,time()+3600);
+        setcookie("ciastko",1,time()+3600, 'localhost');
         echo "<p>Witaj! Nasza strona używa ciasteczek</p>";
       }
       else{
