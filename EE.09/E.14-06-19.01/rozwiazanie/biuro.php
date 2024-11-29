@@ -11,7 +11,15 @@
       <h1>WESOŁA WYPRAWA</h1>
     </header>
     <section id="ciasteczka">
-      <!--skrypt-->
+    <?php
+      if(!isset($_COOKIE['ciastko'])){
+        setcookie("ciastko",1,time()+3600);
+        echo "<p>Witaj! Nasza strona używa ciasteczek</p>";
+      }
+      else{
+        echo "<p>Witaj ponownie na naszej stronie</p>";
+      }
+    ?>
     </section>
     <section id="lewy">
       <table>
@@ -59,3 +67,4 @@
     <footer id="stopka">Stronę przygotował: Adam Strużyk 5TI</footer>
   </body>
 </html>
+
