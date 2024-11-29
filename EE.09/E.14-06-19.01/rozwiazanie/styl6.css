@@ -1,0 +1,44 @@
+body{
+    font-family: Tahoma;
+}
+#baner,#stopka{
+    background-color: rgb(72, 209, 204);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#ciasteczka{
+    background-color: rgb(139, 69, 19);
+    color: white;
+    padding: 10px;
+}
+#lewy{
+    background-color: rgb(175, 238, 238);
+    width: 70%;
+    height: 600px;
+}
+#prawy{
+    background-color: rgb(175, 238, 238);
+    width: 30%;
+    height: 600px;
+}
+
+#lewy,#prawy{
+    float: left;
+}
+#stopka{
+    clear: both;
+}
+
+p{
+    font-size: 150%;
+}
+img{
+    border: 1px solid gray;
+    height: 250px;
+    padding: 5px;
+}
+img:hover{
+    height: 300px;
+    border: 1px solid black;
+}
