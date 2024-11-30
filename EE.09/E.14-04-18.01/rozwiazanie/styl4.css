@@ -1,0 +1,45 @@
+#baner{
+    background-color: #301B5E;
+    color: white;
+    font-family: arial;
+    height: 60px;
+    padding: 20px;
+}
+#lewy{
+    background-color: #0193DA;
+    width: 60%;
+    height: 700px;
+    float: left;
+}
+#prawy{
+    background-color: #2DAFEE;
+    width: 40%;
+    height: 700px;
+    text-align: center;
+    float: left;
+}
+#prawy li{
+    list-style-position:inside;
+}
+#stopka{
+    clear: both;
+    background-color: #301B5E;
+    color: white;
+    text-align: center;
+}
+img{
+    padding: 20px;
+    border: 1px dotted orange;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:red;
+}
+input[type="submit"], input[type="reset"]{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 20px;
+}
