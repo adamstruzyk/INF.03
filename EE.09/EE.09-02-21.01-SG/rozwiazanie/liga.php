@@ -49,7 +49,25 @@
       <h3>Liga mistrzów</h3>
     </section>
     <section id="liga">
-      <!--skrypt 2-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','egzamin');
+        if(!$conn){
+          exit();
+        }else{
+          $zapytanie2 = "SELECT `zespol`,`punkty`,`grupa` FROM `liga` ORDER BY `punkty` DESC;";
+          $wynik = mysqli_query($conn, $zapytanie2);
+
+          while($row = mysqli_fetch_array($wynik)){
+            echo "<section class='informacja'>";
+            echo "<h2>$row[0]</h2>";
+            echo "<h1>$row[1]</h1>";
+            echo "<p>grupa: $row[2]</p>";
+            echo "</section>";
+          }
+          
+        }
+        mysqli_close($conn);
+      ?>
     </section>
   </body>
 </html>
