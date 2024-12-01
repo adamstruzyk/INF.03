@@ -10,6 +10,7 @@
     margin: 5px;
     border: 1px solid white;
     border-radius: 15px;
+    float: left;
 }
 .informacja:hover{
     background-color: white;
@@ -17,19 +18,28 @@
 }
 #glowny{
     color: white;
+    clear: both;
 }
 #lewy{
     background-color: whitesmoke;
     width: 30%;
     text-align: center;
     height: 150px;
+    float: left;
 }
 #prawy{
     background-color: whitesmoke;
     width: 70%;
     height: 150px;
+    float: left;
 }
 body{
     font-family: verdana;
     background-color: seagreen;
+
+}
+h3{
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: capitalize;
 }
