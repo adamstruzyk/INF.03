@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko` FROM `zawodnik` WHERE `pozycja_id` = 4;
+Zapytanie 2: SELECT `zespol`,`punkty`,`grupa` FROM `liga` ORDER BY `punkty` DESC;
+Zapytanie 3: SELECT zawodnik.id, zawodnik.nazwisko, pozycja.nazwa FROM `zawodnik` JOIN pozycja ON pozycja.id = zawodnik.pozycja_id WHERE zawodnik.id = 3 OR zawodnik.id = 5;
+Zapytanie 4: DELETE FROM rozgrywka;
