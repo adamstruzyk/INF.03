@@ -14,10 +14,10 @@
     <section id="lewy">
       <form method="post">
         <select name="pozycja">
-          <option value="bramkarze">Bramkarze</option>
-          <option value="obroncy">Obrońcy</option>
-          <option value="pomocnicy">Pomocnicy</option>
-          <option value="napastnicy">Napastnicy</option>
+          <option value="1">Bramkarze</option>
+          <option value="2">Obrońcy</option>
+          <option value="3">Pomocnicy</option>
+          <option value="4">Napastnicy</option>
         </select>
         <input type="submit" value="Zobacz" />
       </form>
@@ -26,7 +26,23 @@
     </section>
     <section id="prawy">
       <ol>
-        <!--skrypt 1-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','egzamin');
+          if(!$conn){
+            exit();
+          }else{
+            @$pozycja_id = $_POST['pozycja'];
+            if(isset($pozycja_id)){
+              $zapytanie1 = "SELECT `imie`,`nazwisko` FROM `zawodnik` WHERE `pozycja_id` = $pozycja_id;";
+              $wynik = mysqli_query($conn, $zapytanie1);
+
+              while($row = mysqli_fetch_array($wynik)){
+                echo "<li><p>$row[0] $row[1]</p></li>";
+              }
+            }
+          }
+          mysqli_close($conn);
+        ?>
       </ol>
     </section>
     <section id="glowny">
