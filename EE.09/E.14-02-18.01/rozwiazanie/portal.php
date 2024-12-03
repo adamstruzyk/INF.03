@@ -12,7 +12,23 @@
     </header>
     <section id="lewy">
       <h2>Ogłoszeniodawcy</h2>
-      <!--skrypt polaczenia z baza-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','ogloszenia');
+        $zapytanie1 = "SELECT `id`, `imie`, `nazwisko`, `email` FROM `uzytkownik` WHERE `id` < 4;";
+        $wynik1 = mysqli_query($conn, $zapytanie1);
+
+        $text = "";
+        while($row = mysqli_fetch_array($wynik1)){
+          $text .= "<h3>$row[0] $row[1] $row[2]</h3>";
+          $text .= "<p>$row[3]</p>";
+          $zapytanie2 = "SELECT `tytul` FROM ogloszenie WHERE uzytkownik_id = $row[0] LIMIT 1;";
+          $wynik2 = mysqli_query($conn, $zapytanie2);
+          $row2 = mysqli_fetch_array($wynik2);
+          $text .= "<p>Ogłoszenie: $row2[0]</p>";
+        }
+        echo $text;
+        mysqli_close($conn);
+      ?>
     </section>
     <section id="prawy">
       <h2>Nasze kategorie</h2>
@@ -46,3 +62,5 @@
     </section>
   </body>
 </html>
+
+
