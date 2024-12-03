@@ -38,7 +38,6 @@
         <tr>
           <td>41 i więcej</td>
           <td>0,70 PLN</td>
-          <td></td>
         </tr>
       </table>
     </section>
