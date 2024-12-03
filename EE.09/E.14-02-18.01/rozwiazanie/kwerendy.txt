@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `id`, `imie`, `nazwisko`, `email` FROM `uzytkownik` WHERE `id` < 4;
-Zapytanie 2: SELECT ogloszenie.tytul FROM `ogloszenie` JOIN uzytkownik ON uzytkownik.id = ogloszenie.uzytkownik_id WHERE ogloszenie.id = 1;
+Zapytanie 2: SELECT `tytul` FROM ogloszenie WHERE uzytkownik_id = 1;
 Zapytanie 3: CREATE USER 'admin'@'localhost' IDENTIFIED BY "zaq1@";
 Zapytanie 4: GRANT SELECT, DELETE, UPDATE ON ogloszenia.uzytkownik TO 'admin'@'localhost';
