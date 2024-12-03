@@ -62,5 +62,3 @@
     </section>
   </body>
 </html>
-
-
