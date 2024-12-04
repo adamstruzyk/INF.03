@@ -20,7 +20,7 @@
         <li>Ssaki</li>
       </ol>
       <form method="post">
-        Wybierz gromadę: <input type="number" name="gromada" />
+        Wybierz gromadę: <input type="number" name="gromady" />
         <button type="submit">Wyświetl</button>
       </form>
     </section>
@@ -28,7 +28,40 @@
       <img src="zwierzeta.jpg" alt="dzikie zwierzęta" />
     </section>
     <section id="srodkowy">
-      <!--skrypt-->
+    <?php
+      $conn = mysqli_connect('localhost','root','','baza');
+      if(!$conn){
+        exit();
+      }else{
+        @$gromady = $_POST['gromady'];
+        if(isset($gromady)){
+          switch($gromady){
+            case 1:
+              echo "<h2>RYBY</h2>";
+              break;
+            case 2:
+              echo "<h2>PŁAZY</h2>";
+              break;
+            case 3:
+              echo "<h2>GADY</h2>";
+              break;
+            case 4:
+              echo "<h2>PTAKI</h2>";
+              break;
+            case 5:
+              echo "<h2>SSAKI</h2>";
+              break;                  
+          }
+          $zapytanie1 = "SELECT gatunek, wystepowanie FROM zwierzeta WHERE Gromady_id = '$gromady';";
+          $wynik = mysqli_query($conn, $zapytanie1);
+
+          while($row = mysqli_fetch_array($wynik)){
+            echo "$row[0], $row[1] <br>";
+          }
+        }
+      }
+      mysqli_close($conn);
+    ?>
     </section>
     <section id="prawy">
       <h2>Wszystkie zwierzęta w bazie</h2>
