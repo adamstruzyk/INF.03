@@ -65,7 +65,20 @@
     </section>
     <section id="prawy">
       <h2>Wszystkie zwierzęta w bazie</h2>
-      <!--skrypt 2-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','baza');
+        if(!$conn){
+          exit();
+        }else{
+          $zapytanie2 = "SELECT zwierzeta.id, zwierzeta.gatunek, gromady.nazwa FROM `zwierzeta` JOIN gromady ON gromady.id = zwierzeta.Gromady_id;";
+          $wynik = mysqli_query($conn, $zapytanie2);
+
+          while($row = mysqli_fetch_array($wynik)){
+            echo "$row[0]. $row[1], $row[2] <br>";
+          }
+        }
+        mysqli_close($conn);
+      ?>
     </section>
     <footer id="stopka">
       <a href="atlas-zwierzat.pl" target="_blank"
