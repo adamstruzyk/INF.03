@@ -1,0 +1,4 @@
+Zapytanie 1: INSERT INTO `filmy`(`gatunki_id`, `tytul`, `rok`, `ocena`) VALUES (5,'Suburbicon','2017',5);
+Zapytanie 2: SELECT filmy.tytul, gatunki.nazwa FROM `filmy` JOIN gatunki ON gatunki.id = filmy.gatunki_id WHERE filmy.ocena = 6;
+Zapytanie 3: SELECT `tytul`,`rok` FROM `filmy` WHERE `gatunki_id` = 3 AND `ocena` = 5;
+Zapytanie 4: CREATE TABLE `aktorzy`(id INT NOT NULL, imie text, nazwisko text);
