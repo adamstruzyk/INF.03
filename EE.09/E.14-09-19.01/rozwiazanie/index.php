@@ -37,8 +37,7 @@
     <footer id="stopka">
       <a href="atlas-zwierzat.pl" target="_blank"
         >Poznaj inne strony o zwierzętach</a
-      >
-      autor Atlasu zwierząt: Adam Strużyk 5TI
+      >, autor Atlasu zwierząt: Adam Strużyk 5TI
     </footer>
   </body>
 </html>
