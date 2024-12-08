@@ -7,11 +7,40 @@
     <link rel="stylesheet" href="styl6.css" />
   </head>
   <body>
-    <header id="banner"></header>
-    <section id="lewy"></section>
-    <section id="srodkowy"></section>
-    <section id="prawy"></section>
-    <section id="dolny"></section>
-    <footer id="stopka"></footer>
+    <header id="baner">
+      <h2>Najlepsza pizza w mieście</h2>
+      <img src="logo.png" id="logo" />
+    </header>
+    <section id="lewy">
+      <p>U nas zamówisz pizzę z dowozem</p>
+      <a href="logo.png">Nasze logo</a>
+    </section>
+    <section id="srodkowy">
+      <h3>Pizzeria Margherita</h3>
+      <p>Ul. Botaniczna 4, Zielona Góra</p>
+    </section>
+    <section id="prawy">
+      <h3>Oferta</h3>
+      <ol>
+        <li>Pizza</li>
+        <li>Lasagne</li>
+        <li>Sałatki</li>
+      </ol>
+      <p>
+        <a href="Oferta.txt">Pobierz pełną ofertę</a>
+      </p>
+    </section>
+    <section id="dolny">
+      <h3>Oblicz koszt dostawy</h3>
+      <input type="checkbox" /> Jestem z Zielonej Góry
+      <p>albo</p>
+      Podaj liczbę kilometrów od Zielonej Góry <input type="number" /> <br />
+      <button onclick="oblicz()">Oblicz</button>
+
+      <p id="wynik"></p>
+    </section>
+    <footer id="stopka">
+      Stronę internetową opracował: <strong>Adam Strużyk 5TI</strong>
+    </footer>
   </body>
 </html>
