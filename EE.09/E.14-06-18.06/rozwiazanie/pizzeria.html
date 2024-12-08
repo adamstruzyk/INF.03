@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria Margherita</title>
     <link rel="stylesheet" href="styl6.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header id="baner">
@@ -34,9 +35,10 @@
     </section>
     <section id="dolny">
       <h3>Oblicz koszt dostawy</h3>
-      <input type="checkbox" /> Jestem z Zielonej Góry
+      <input type="checkbox" id="check" /> Jestem z Zielonej Góry
       <p>albo</p>
-      Podaj liczbę kilometrów od Zielonej Góry <input type="number" /> <br />
+      Podaj liczbę kilometrów od Zielonej Góry
+      <input type="number" id="km" /> <br />
       <button onclick="oblicz()">Oblicz</button>
 
       <p id="wynik"></p>
