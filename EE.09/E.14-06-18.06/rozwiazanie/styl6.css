@@ -1,3 +1,45 @@
 #baner #logo{
     height: 100px;
 }
+
+#baner{
+    background-color: #4E885C;
+    color: orange;
+    height: 110px;
+    text-align: center;
+}
+#lewy{
+    background-color: #72A37D;
+    width: 30%;
+    height: 300px;
+}
+#srodkowy{
+    background: url(pizza.png);
+    background-color: #A2C3A9;
+    width: 40%;
+    height: 300px;
+}
+#prawy{
+    background-color: #72A37D;
+    text-align: center;
+    height: 300px;
+    width: 30%;
+}
+#lewy,#srodkowy,#prawy{
+    float: left;
+}
+#dolny{
+    clear: both;
+    background-color: #A2C3A9;
+    text-align: center;
+    height: 250px;
+}
+#stopka{
+    background-color: #4E885C;
+    color: orange;
+}
+#prawy a{
+    background-color: orange;
+    color: green;
+    padding: 15px;
+}
