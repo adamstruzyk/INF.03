@@ -1,0 +1,49 @@
+*{
+    font-family: Tahoma sans-serif;
+}
+#baner{
+    background-color: Tomato;
+    color: white;
+    padding: 10px;
+}
+#glowny{
+    background-color: seashell;
+    height: 500px;
+    overflow: auto;
+}
+#stopka1, #stopka2, #stopka3, #stopka4{
+    float: left;
+    background-color: tomato;
+    color: white;
+    width: 25%;
+    height: 160px;
+}
+.opinie{
+    background-color: white;
+    color: dimgray;
+    width: 60%;
+    margin: 40px auto 40px auto;
+    box-shadow: 0px 0px 10px 5px dimgray;
+}
+img{
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+blockquote{
+    padding: 10px;
+    font-size: 150%;
+    font-style: italic;
+}
+h1,h2{
+    text-align: center;
+}
+h4{
+    text-align: right;
+    margin-right: 40px;
+    font-size: 150%;
+    font-style: italic;
+}
+a{
+    color: white;
+}
