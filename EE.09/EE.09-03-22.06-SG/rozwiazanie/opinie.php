@@ -12,7 +12,24 @@
     </header>
     <main id="glowny">
       <h2>Opinie naszych klientów</h2>
-      <!--skrypt 1-->
+      <?php
+        $conn = mysqli_connect('localhost','root','','hurtownia');
+        if(!$conn){
+          exit();
+        }else{
+          $zapytanie3 = "SELECT klienci.zdjecie, klienci.imie, opinie.opinia FROM `klienci` JOIN opinie ON opinie.Klienci_id = klienci.id WHERE klienci.Typy_id IN(2,3);";
+          $wynik = mysqli_query($conn, $zapytanie3);
+
+          while($row = mysqli_fetch_array($wynik)){
+            echo "<section class='opinie'>";
+            echo "<img src='$row[0]' alt='klient'>";
+            echo "<blockquote>$row[2]</blockquote>";
+            echo "<h4>$row[1]</h4>";
+            echo "</section>";
+          }
+        }
+        mysqli_close($conn);
+      ?>
     </main>
     <footer id="stopka1">
       <h3>Współpracują z nami</h3>
@@ -33,3 +50,19 @@
     </footer>
   </body>
 </html>
+
+
+<?php
+  $conn = mysqli_connect('localhost','root','','hurtownia');
+  if(!$conn){
+    exit();
+  }else{
+    $zapytanie1 = "SELECT `imie`,`nazwisko`,`punkty` FROM `klienci` ORDER BY `punkty` DESC LIMIT 3;";
+    $wynik = mysqli_query($conn, $zapytanie3);
+
+    while($row = mysqli_fetch_array($wynik)){
+
+    }
+  }
+  mysqli_close($conn);
+?>
