@@ -38,7 +38,20 @@
     <footer id="stopka2">
       <h3>Nasi top klienci</h3>
       <ol>
-        <!--skrypt 2-->
+        <?php
+          $conn = mysqli_connect('localhost','root','','hurtownia');
+          if(!$conn){
+            exit();
+          }else{
+            $zapytanie1 = "SELECT `imie`,`nazwisko`,`punkty` FROM `klienci` ORDER BY `punkty` DESC LIMIT 3;";
+            $wynik = mysqli_query($conn, $zapytanie1);
+
+            while($row = mysqli_fetch_array($wynik)){
+              echo "<li>$row[0] $row[1], $row[2] pkt.</li>";
+            }
+          }
+          mysqli_close($conn);
+        ?>
       </ol>
     </footer>
     <footer id="stopka3">
@@ -52,17 +65,3 @@
 </html>
 
 
-<?php
-  $conn = mysqli_connect('localhost','root','','hurtownia');
-  if(!$conn){
-    exit();
-  }else{
-    $zapytanie1 = "SELECT `imie`,`nazwisko`,`punkty` FROM `klienci` ORDER BY `punkty` DESC LIMIT 3;";
-    $wynik = mysqli_query($conn, $zapytanie3);
-
-    while($row = mysqli_fetch_array($wynik)){
-
-    }
-  }
-  mysqli_close($conn);
-?>
