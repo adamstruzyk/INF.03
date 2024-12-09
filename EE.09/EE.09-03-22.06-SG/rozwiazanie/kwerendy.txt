@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko`,`punkty` FROM `klienci` ORDER BY `punkty` DESC LIMIT 3;
+Zapytanie 2: SELECT typy.nazwa, COUNT(klienci.id) FROM `typy` JOIN klienci ON klienci.Typy_id = typy.id GROUP BY typy.nazwa;
+Zapytanie 3: SELECT klienci.zdjecie, klienci.imie, opinie.opinia FROM `klienci` JOIN opinie ON opinie.Klienci_id = klienci.id WHERE klienci.Typy_id IN(2,3);
+Zapytanie 4: ALTER TABLE klienci ADD adres varchar(50);
