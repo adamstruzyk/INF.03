@@ -1,0 +1,45 @@
+#kontener{
+    font-family: Helvetica, sans-serif;
+    background-color: linen;
+    color: #222;
+    margin: auto;
+    width: 90%;
+}
+#baner1,#baner2{
+    float: left;
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+#glowny{
+    clear: both;
+    padding: 20px;
+}
+#stopka{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+table{
+    margin: 40px;
+}
+td{
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    color: #aaa;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+li{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: 1px solid white;
+}
