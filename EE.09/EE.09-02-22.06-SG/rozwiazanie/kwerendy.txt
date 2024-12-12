@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `imie`,`nazwisko`,`miasto` FROM `klient` WHERE `miasto` LIKE 'Legionowo' OR `miasto` LIKE 'Warszawa';
 Zapytanie 2: SELECT `nazwa` FROM `produkty` WHERE `cena_brutto` > 500;
 Zapytanie 3: SELECT kategorie.nazwa_kategorii, AVG(produkty.cena_brutto) FROM `kategorie` JOIN produkty ON produkty.id_kat = kategorie.id_kat GROUP BY kategorie.nazwa_kategorii;
-Zapytanie 4: SELECT zamowienia.id_zam, zamowienia.ilosc, zamowienia.wartosc, produkty.nazwa FROM `zamowienia` JOIN produkty ON produkty.id_prod = zamowienia.id_prod WHERE zamowienia.id_zam = 2;
+Zapytanie 4: SELECT zamowienia.id_zam, zamowienia.ilosc, zamowienia.wartosc, produkty.nazwa FROM `zamowienia` JOIN produkty ON produkty.id_prod = zamowienia.id_prod WHERE zamowienia.id_klient = 2;
