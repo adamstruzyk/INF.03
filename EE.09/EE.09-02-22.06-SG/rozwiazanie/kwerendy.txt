@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko`,`miasto` FROM `klient` WHERE `miasto` LIKE 'Legionowo' OR `miasto` LIKE 'Warszawa';
+Zapytanie 2:
+Zapytanie 3:
+Zapytanie 4:
