@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomocnik CSS</title>
+    <link rel="stylesheet" href="styl2.css" />
+  </head>
+  <body>
+    <main id="kontener">
+      <header id="baner1">
+        <h1>Pomocnik CSS</h1>
+      </header>
+      <header id="baner2">
+        <ul>
+          <li>
+            <a href="kolory.html">Kolory</a>
+          </li>
+          <li>
+            <a href="czcionki.html">czcionki</a>
+          </li>
+          <li>
+            <a href="style.html">Style CSS</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/" target="_blank">Pomoc</a>
+          </li>
+        </ul>
+      </header>
+      <section id="glowny">
+        <h2>Podaj składową H koloru w kodzie HSL</h2>
+        <p>
+          0 do 30 czerwienie, do 60 żółcie, do 150 zielenie, do 250 niebieskie,
+          do 360 fiolet i purpura
+        </p>
+        <img src="kolory.jpg" alt="Przestrzeń barw HSL" /> <br />
+        <input type="number" id="kolor" max="360" placeholder="0 - 360" />
+        <button onclick="generuj()">Generuj paletę</button>
+
+        <table>
+          <tr>
+            <th colspan="4">Kolor główny</th>
+          </tr>
+          <tr>
+            <th>kolor 1</th>
+            <th>kolor 2</th>
+            <th>kolor 3</th>
+            <th>kolor 4</th>
+          </tr>
+        </table>
+      </section>
+      <footer id="stopka">
+        <p>Autor: Adam Strużyk 5TI</p>
+      </footer>
+    </main>
+  </body>
+</html>
