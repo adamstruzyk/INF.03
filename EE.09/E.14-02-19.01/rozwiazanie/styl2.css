@@ -1,0 +1,54 @@
+*{
+    font-family: Georgia;
+}
+#baner{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#gorny1, #gorny2{
+    background-color: #A26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+#gorny3{
+    background-color: #A26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+}
+#gorny1, #gorny2, #gorny3{
+    float: left;
+}
+
+#glowny{
+    background-color: #F0EAE2;
+    padding: 50px;
+    clear: both;
+}
+#stopka{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+table, td, th{
+    border: 2px solid #69293A;
+    padding: 7px;
+    border-collapse: collapse;
+}
+ul > li{
+    list-style-type: square;
+}
+#przycisk1{
+    background-color: red;
+}
+#przycisk2{
+    background-color: green;
+}
+#przycisk3{
+    background-color: blue;
+}
