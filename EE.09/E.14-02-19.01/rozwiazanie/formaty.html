@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formatowanie</title>
     <link rel="stylesheet" href="styl2.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header id="baner">
@@ -53,19 +54,19 @@
     <main id="glowny">
       <p>
         Podaj rozmiar tekstu w procentach:
-        <input type="number" id="procent" />%
+        <input type="number" id="rozmiar" />%
       </p>
       <p>
         <select id="styl_czcionki">
-          <option value="prosty">prosty</option>
+          <option value="prosta">prosty</option>
           <option value="kursywa">kursywa</option>
         </select>
       </p>
       <p>
         Jakim kolorem sformatować tekst? Wybierz przycisk <br />
-        <button id="przycisk1" onclick=""></button>
-        <button id="przycisk2" onclick=""></button>
-        <button id="przycisk3" onclick=""></button>
+        <button id="przycisk1" onclick="zmien(1)">&nbsp;</button>
+        <button id="przycisk2" onclick="zmien(2)">&nbsp;</button>
+        <button id="przycisk3" onclick="zmien(3)">&nbsp;</button>
       </p>
       <p id="wynik">
         To jest przykład paragrafu, który może być dowolnie formatowany przez
