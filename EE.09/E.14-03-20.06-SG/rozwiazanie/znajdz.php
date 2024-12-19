@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kwiaty</title>
+    <link rel="stylesheet" href="styl.css">
   </head>
   <body>
     <header id="baner">
@@ -12,8 +13,8 @@
     <main>
       <section id="lewy">
         <h3>Kwiaty dla Ciebie!</h3>
-        <a href="https://www.swiatkwiatow.pl/">Rozpoznaj kwiaty</a>
-        <a href="znajdz.php">Znajdź kwiacairnię</a>
+        <a href="https://www.swiatkwiatow.pl/">Rozpoznaj kwiaty</a> <br>
+        <a href="znajdz.php">Znajdź kwiaciarnię</a>
         <img src="gozdzik.jpg" alt="Goździk" />
       </section>
       <section id="prawy">
