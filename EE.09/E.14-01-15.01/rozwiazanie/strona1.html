@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Działania matematyczne</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styl.css" />
   </head>
   <body>
     <header id="baner">
@@ -20,11 +22,14 @@
       <section id="tresc">
         <h1>PROSTE DZIAŁANIA</h1>
         Podaj pierwszą liczbę: <input type="number" id="liczba1" /> <br />
+        <br />
         Podaj drugą liczbę: <input type="number" id="liczba2" /> <br />
+        <br />
         <button onclick="dodawanie()">DODAWANIE</button>
         <button onclick="odejmowanie()">ODEJMOWANIE</button>
         <button onclick="mnozenie()">MNOŻENIE</button>
         <button onclick="dzielenie()">DZIELENIE</button>
+        <p id="wynik"></p>
       </section>
     </main>
   </body>

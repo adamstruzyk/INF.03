@@ -1,3 +1,10 @@
 #tresc{
     font-style: italic;
+    width: 70%;
+}
+#menu{
+    width: 30%;
+}
+#menu,#tresc{
+    float: left;
 }
