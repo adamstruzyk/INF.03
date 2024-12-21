@@ -1,4 +1,4 @@
-Zapytanie 1:
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 1: SELECT `id`,`tytul` FROM `ogloszenia` ORDER BY `tytul` ASC;
+Zapytanie 2: SELECT `tytul` FROM `ogloszenia` WHERE `kategoria` = 1 AND `podkategoria` = 13;
+Zapytanie 3: UPDATE `ogloszenia` SET `podkategoria`= 1 WHERE `id` = 5;
+Zapytanie 4: ALTER TABLE `ogloszenia` DROP `uzytkownik_id`;
