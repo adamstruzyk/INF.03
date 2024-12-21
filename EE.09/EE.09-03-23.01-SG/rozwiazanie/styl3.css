@@ -1,0 +1,52 @@
+body{
+    font-family: Georgia;
+    background-color: aliceblue;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+#baner{
+    background-color: #A00037;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    padding: 3px;
+}
+#blok_artykulow{
+    width: 70%;
+    float: left;
+}
+button{
+    background-color: #D81B60;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    width: 100%;
+}
+#artykul1, #artykul2, #artykul3, #artykul4{
+    display: none;
+} 
+#stopka_redakcyjna{
+    float: right;
+    background-color: #D81B60;
+    color: white;
+    width: 20%;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 15px 15px 12px dimgray;
+}
+h5, blockquote{
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+table{
+    margin: auto;
+    width: 95%;
+    border: 1px solid aliceblue;
+}
