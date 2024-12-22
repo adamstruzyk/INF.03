@@ -19,8 +19,26 @@
     </header>
     <main>
       <section id="lewy">
-        <!--skrypt 1-->
-        skrypt1
+      <?php
+        $conn = mysqli_connect('localhost','root','','baza');
+        if(!$conn){
+          exit();
+        }else{
+          $wynik = mysqli_query($conn, "SELECT `id`,`Gromady_id`,`gatunek`,`wystepowanie` FROM `zwierzeta` WHERE `Gromady_id` = 4 OR `Gromady_id` = 5;");
+          
+          while($row = mysqli_fetch_array($wynik)){
+            echo "<p>$row[0]. $row[2]</p>"; 
+            echo "<p>Występowanie: $row[3], gromada ";
+            if($row[1] == 4){
+              echo "ptaki</p>";
+            }else{
+              echo "ssaki</p>";
+            }
+            echo "<hr>";
+          }
+        }
+        mysqli_close($conn);
+      ?>
       </section>
       <section id="prawy">
         <h1>PTAKI</h1>
