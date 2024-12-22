@@ -43,8 +43,19 @@
       <section id="prawy">
         <h1>PTAKI</h1>
         <ol>
-          <!--skrypt 2-->
-          skrypt 2
+          <?php
+            $conn = mysqli_connect('localhost','root','','baza');
+            if(!$conn){
+              exit();
+            }else{
+              $wynik = mysqli_query($conn, "SELECT `gatunek`,`obraz` FROM `zwierzeta` WHERE `Gromady_id` = 4;");
+              
+              while($row = mysqli_fetch_array($wynik)){
+                echo "<li><a href='$row[1]'>$row[0]</a></li>"; 
+              }
+            }
+            mysqli_close($conn);
+          ?>
         </ol>
         <img src="sroka.jpg" alt="Sroka zwyczajna, gromada ptaki" />
       </section>
@@ -52,3 +63,4 @@
     <footer>Stronę o kręgowcach przygotował: Adam Strużyk 5TI</footer>
   </body>
 </html>
+
