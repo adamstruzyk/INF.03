@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `gatunek`,`obraz` FROM `zwierzeta` WHERE `Gromady_id` = 4;
+Zapytanie 2: SELECT `id`,`Gromady_id`,`gatunek`,`wystepowanie` FROM `zwierzeta` WHERE `Gromady_id` = 4 OR `Gromady_id` = 5;
+Zapytanie 3: SELECT zwierzeta.gatunek, odzywianie.id, odzywianie.rodzaj FROM `zwierzeta` JOIN odzywianie ON odzywianie.id = zwierzeta.Odzywianie_id;
+Zapytanie 4: ALTER TABLE odzywianie DROP `informacja`;
