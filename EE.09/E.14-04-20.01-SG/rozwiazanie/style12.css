@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana;
+}
+nav{
+    background-color: sandybrown;
+    height: 120px;
+    width: 60%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    background-color: sienna;
+    color: white;
+    text-align: center;
+    height: 120px;
+    width: 40%;
+    float: right;
+}
+main{
+    clear: both;
+}
+#lewy{
+    background-color: sienna;
+    color: white;
+    height: 700px;
+    width: 60%;
+}
+#prawy{
+    background-color: sandybrown;
+    height: 700px;
+    width: 40%;
+}
+#lewy, #prawy{
+    float: left;
+}
+footer{
+    clear: both;
+    background-color: #4D1900;
+    color: white;
+    text-align: right;
+}
+nav a{
+    background-color: green;
+    color: yellow;
+    padding: 20px 50px 20px 50px;
+    vertical-align:middle;
+    margin-right: 4px;
+}
+nav a:hover{
+    background-color: yellow;
+    color: green;
+}
