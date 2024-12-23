@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `id`,`nazwa`,`opis`,`zdjecie` FROM `produkty` WHERE `id` IN (18,22,23,25);
+Zapytanie 2: SELECT `id`,`nazwa`,`opis`,`zdjecie` FROM `produkty` WHERE `Rodzaje_id` = 12;
+Zapytanie 3: SELECT produkty.nazwa, rodzaje.nazwa FROM `produkty` JOIN rodzaje ON rodzaje.id = produkty.Rodzaje_id WHERE produkty.opis LIKE "%Leia%";
+Zapytanie 4: DELETE FROM `produkty` WHERE `id` = 15;
