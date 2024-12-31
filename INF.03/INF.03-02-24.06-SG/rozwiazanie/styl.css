@@ -1,45 +1,43 @@
 *{
     font-family: Garamond;
 }
-
-#baner {
+#baner{
     background-color: tomato;
     color: white;
     text-align: center;
     width: 80%;
     height: 80px;
+    float: left;
 }
 #glowny{
     width: 80%;
     height: 600px;
     float: left;
 }
-
 #boczny{
     background-color: coral;
     width: 20%;
     height: 680px;
     float: right;
 }
-
 #stopka{
-    clear: both;
     background-color: tomato;
     color: white;
     text-align: center;
+    clear: both;
 }
 img{
     border-radius: 50%;
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
 }
-#chat{
+#blok_chatu{
     border: 1px solid tomato;
     margin: 15px;
     height: 470px;
     overflow: scroll;
 }
-.jolka,.krzysztof{
+.jolka, .krzysiek{
     border-radius: 5px;
     width: 90%;
     height: 70px;
@@ -48,17 +46,15 @@ img{
 }
 .jolka{
     background-color: #EEE;
-    float: left;
 }
 .jolka img{
     float: left;
 }
-.krzysztof{
+.krzysiek{
     background-color: #CCC;
-    float: right;
     text-align: right;
 }
-.krzysztof img{
+.krzysiek img{
     float: right;
 }
 button{
