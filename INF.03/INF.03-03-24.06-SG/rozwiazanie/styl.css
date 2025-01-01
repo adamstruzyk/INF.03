@@ -1,51 +1,71 @@
-*{
-    font-family: georgia;
+* {
+    font-family: Georgia;
 }
-#baner1,#baner2{
+
+#baner1,
+#baner2 {
     background-color: Navy;
     color: white;
     text-align: center;
-    height: 100px;
+    height: 100%;
     width: 50%;
     float: left;
 }
-#menu{
+
+#baner {
+    height: 100px;
+}
+
+#lewy {
     clear: both;
+}
+
+#menu {
     background-color: navy;
     padding: 20px;
 }
-.txt{
+
+.opcje {
     color: silver;
     margin: 50px;
 }
-.txt:hover{
+
+.opcje:hover {
     color: white;
     text-decoration: underline;
 }
-#lewy,#prawy{
+
+#lewy,
+#prawy {
     background-color: azure;
     height: 550px;
     float: left;
 }
-#lewy{
+
+#lewy {
     width: 70%;
 }
-#prawy{
+
+#prawy {
     width: 30%;
 }
-#stopka{
+
+#stopka {
     background-color: navy;
     color: white;
     clear: both;
 }
-table{
+
+table {
     border: 1px solid navy;
     margin: auto;
     width: 70%;
 }
-tr:hover{
+
+tr:hover {
     background-color: skyblue;
 }
-#prawy img{
+
+#prawy img {
     width: 90%;
 }
