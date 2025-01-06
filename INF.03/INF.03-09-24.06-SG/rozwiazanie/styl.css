@@ -1,0 +1,90 @@
+* {
+    font-family: Georgia;
+    color: white;
+}
+
+#baner,
+#stopka {
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+#lewy,
+#srodkowy,
+#prawy {
+    background-color: lightsalmon;
+    height: 527px;
+}
+
+#lewy,
+#prawy {
+    width: 15%;
+}
+
+#lewy {
+    float: left;
+}
+
+#srodkowy {
+    width: 70%;
+    float: left;
+}
+
+#prawy {
+    float: right;
+}
+
+#miniatury {
+    clear: both;
+    background-color: maroon;
+    height: 70px;
+}
+
+button {
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+@keyframes zdjecia {
+    from {
+        padding-left: 50px;
+    }
+
+    to {
+        padding-left: 0px;
+    }
+}
+
+#miniatury img {
+    height: 70px;
+    animation-name: zdjecia;
+    animation-duration: 4s;
+}
+
+#srodkowy img {
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+
+@keyframes zdjecie_srodkowe {
+    from {
+        scale: 100%;
+    }
+
+    to {
+        scale: 120%;
+    }
+}
+
+#srodkowy img:hover {
+    animation-name: zdjecie_srodkowe;
+    animation-duration: 5s;
+    scale: 120%;
+}
