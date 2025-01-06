@@ -1,4 +1,0 @@
-Zapytanie 1: SELECT `miejsce`,`liczbaDni` FROM `wycieczki` WHERE `cena` < 1000;
-Zapytanie 2: SELECT `liczbaDni`, AVG(`cena`) AS `sredniaCena` FROM `wycieczki` GROUP BY liczbaDni;
-Zapytanie 3: SELECT wycieczki.miejsce, zdjecia.nazwa FROM `wycieczki` JOIN zdjecia ON zdjecia.Wycieczki_id = wycieczki.id WHERE cena > 500;
-Zapytanie 4: CREATE USER `Ewa`@`localhost` IDENTIFIED BY 'Ewa!Ewa';
