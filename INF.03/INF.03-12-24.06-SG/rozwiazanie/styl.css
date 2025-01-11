@@ -1,0 +1,51 @@
+* {
+    font-family: Century, serif;
+    text-align: center;
+}
+
+#baner,
+#stopka {
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+}
+
+#b1,
+#b2,
+#b3,
+#b4 {
+    width: 50%;
+    height: 470px;
+    float: left;
+}
+
+#stopka {
+    clear: both;
+}
+
+img {
+    padding: 3px;
+    margin: 10px;
+    border: 2px dashed slateblue;
+}
+
+a {
+    color: white;
+}
+
+button {
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: indigo;
+}
+
+input[type="range"] {
+    width: 80%;
+}
