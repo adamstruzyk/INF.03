@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efekty obrazu</title>
     <link rel="stylesheet" href="styl.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header id="baner">
@@ -12,26 +13,26 @@
     </header>
     <main>
         <article id="b1">
-            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku"> <br>
-            <label><input type="radio" name="opcja1"> Blur</label> <br>
-            <label><input type="radio" name="opcja1"> Sepia</label> <br>
-            <label><input type="radio" name="opcja1"> Negatyw</label> <br> 
-            <button onclick="">Zastosuj</button>
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="zdj1"> <br>
+            <label><input type="radio" name="opcja1" id="blur"> Blur</label> <br>
+            <label><input type="radio" name="opcja1" id="sepia"> Sepia</label> <br>
+            <label><input type="radio" name="opcja1" id="negatyw"> Negatyw</label> <br> 
+            <button onclick="transformacja1()">Zastosuj</button>
         </article>
         <article id="b2">
-            <img src="pomarancza.jpg" alt="drzewo pomarańczy"> <br>
-            <button onclick="">Kolorowy</button> 
-            <button onclick="">Czarno-bialy</button>
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="zdj2"> <br>
+            <button onclick="transformacja2(1)">Kolorowy</button> 
+            <button onclick="transformacja2(2)">Czarno-bialy</button>
         </article>
         <article id="b3">
-            <img src="owoce.jpg" alt="Kosz pełen owoców"> <br>
-            <input type="range" min="0" max="100" value="100"> <br>
-            <button onclick="">Zastosuj</button>
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="zdj3"> <br>
+            <input type="range" min="0" max="100" value="100" id="procent1"> <br>
+            <button onclick="transformacja3()">Zastosuj</button>
         </article>
         <article id="b4">
-            <img src="zolw.jpg" alt="Żółw w wodzie"> <br>
-            <input type="range" min="0" max="250"> <br>
-            <button onclick="">Zastosuj</button>
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="zdj4"> <br>
+            <input type="range" min="0" max="250" id="procent2"> <br>
+            <button onclick="transformacja4()">Zastosuj</button>
         </article>
     </main>
     <footer id="stopka">
