@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep-rejestracja</title>
     <link rel="stylesheet" href="styl.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header id="baner">
@@ -31,30 +32,31 @@
 
     <main>
         <article id="glowny">
-            <button onclick="">Klient</button>
-            <button onclick="">Adres</button>
-            <button onclick="">Kontakt</button>
+            <button onclick="zmien(1)">Klient</button>
+            <button onclick="zmien(2)">Adres</button>
+            <button onclick="zmien(3)">Kontakt</button>
+
             <article id="blok1">
                 <p>Imię</p>
-                <input type="text" placeholder="Wpisz dane..." onfocusout="pasek()">
+                <input type="text" placeholder="Wpisz dane..." onfocusout="pasek()" id="imie">
                 <p>Nazwisko</p>
-                <input type="text" onfocusout="pasek()">
+                <input type="text" onfocusout="pasek()" id="nazwisko">
                 <p>Data urodzenia</p>
-                <input type="date" onfocusout="pasek()">
+                <input type="date" onfocusout="pasek()" id="rokUr">
             </article>
             
             <article id="blok2">
                 <p>Ulica</p>
-                <input type="text" onfocusout="pasek()">
+                <input type="text" onfocusout="pasek()" id="ulica">
                 <p>Numer</p>
-                <input type="number" onfocusout="pasek()">
+                <input type="number" onfocusout="pasek()" id="numer">
                 <p>Miasto</p>
-                <input type="text" onfocusout="pasek()">
+                <input type="text" onfocusout="pasek()" id="miasto">
             </article>
             <article id="blok3">
                 <p>Numer komórkowy</p>
-                <input type="tel">
-                <label><input type="checkbox" onfocusout="pasek()">Akceptuję RODO</label>
+                <input type="tel" id="nrtel">
+                <label><input type="checkbox" onfocusout="pasek()" id="rodo">Akceptuję RODO</label> <br>
                 <button onclick="zatwierdz()">Zatwierdz dane</button>
             </article>
         </article>
