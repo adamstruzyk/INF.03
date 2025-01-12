@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT `imie`,`nazwisko` FROM `osoby` WHERE `dataUr` LIKE "2%";
+Zapytanie 2: SELECT DISTINCT `miasto` FROM `adresy` ORDER BY `miasto` ASC;
+Zapytanie 3: SELECT osoby.imie, osoby.nazwisko, telefony.numer FROM `osoby` JOIN telefony ON telefony.Osoby_id = osoby.id;
+Zapytanie 4: ALTER TABLE adresy ADD numerMieszkania int AFTER numer;
