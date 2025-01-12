@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejestracja</title>
     <link rel="stylesheet" href="styl.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header id="baner">
@@ -14,21 +15,21 @@
         <article id="glowny">
             <article id="blok1">
                 <h2>Dane osobowe</h2>
-                <input type="text" placeholder="Wpisz imię..." required>
-                <input type="text" placeholder="Wpisz nazwisko..." required>
-                <button onclick="">Następna karta</button>
+                <input type="text" placeholder="Wpisz imię..." required id="imie">
+                <input type="text" placeholder="Wpisz nazwisko..." required id="nazwisko">
+                <button onclick="next1()">Następna karta</button>
             </article>
             <article id="blok2">
                 <h2>Dane kontaktowe</h2>
                 <input type="email" placeholder="Twój email...">
                 <input type="tel" placeholder="Twój numer telefonu...">
-                <button onclick="">Następna karta</button>
+                <button onclick="next2()">Następna karta</button>
             </article>
             <article id="blok3">
                 <h2>Hasło do logowania</h2>
-                <input type="password" placeholder="Podaj hasło">
-                <input type="password" placeholder="Powtórz hasło">
-                <button>Zatwierdź</button>
+                <input type="password" placeholder="Podaj hasło" id="haslo1">
+                <input type="password" placeholder="Powtórz hasło" id="haslo2">
+                <button onclick="wyslij()">Zatwierdź</button>
             </article>
         </article>
     </main>
