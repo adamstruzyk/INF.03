@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT `imie`,`nazwisko`,`koszt` FROM `uczestnicy` WHERE `zaplacono` = 0;
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 2: SELECT AVG(`koszt`) AS `Średni koszt`, SUM(`koszt`) AS `Całkowity koszt`, COUNT(`id`) AS `Liczba uczestników` FROM `uczestnicy`;
+Zapytanie 3: SELECT wyklady.nazwa, uczestnicy.nazwisko, uczestnicy.email FROM `wyklady` JOIN uczestnicy ON uczestnicy.wyklady_id = wyklady.id WHERE uczestnicy.zaplacono = 1;
+Zapytanie 4: ALTER TABLE uczestnicy DROP `haslo`;
